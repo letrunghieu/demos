@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Tooltips for D3JS line chart with time series data</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"
+          type="text/css"/>
+    <style>
+        path.domain, .tick line {
+            fill: none;
+            stroke: #000;
+            shape-rendering: crispEdges;
+        }
+
+        .tick line {
+            stroke: #e3e3e3;
+        }
+
+        .line path {
+            fill: none;
+        }
+
+        .area path {
+            stroke: none;
+        }
+    </style>
+</head>
+<body>
+<h1>
+    Tooltips for D3JS line chart with time series data
+</h1>
+<section>
+    <header>
+        <h2>Line chart with no tooltip</h2>
+    </header>
+    <div>
+        <div id="chart-0"></div>
+    </div>
+</section>
+<script>
+    const MARGIN = {top: 20, right: 20, bottom: 40, left: 80};
+    const WIDTH = 1000;
+    const HEIGHT = 300;
+    const CHART_AREA_DIMS = {
+        width: WIDTH - MARGIN.left - MARGIN.right,
+        height: HEIGHT - MARGIN.top - MARGIN.bottom
+    };
+
+    function drawLineChart(dom, data, configs) {
+        var svg = d3.select(dom)
+                .append('svg')
+                .attr('class', 'line-chart')
+                .attr('width', WIDTH)
+                .attr('height', HEIGHT);
+
+        var chartArea = svg.append('g')
+                .attr('width', CHART_AREA_DIMS.width)
+                .attr('height', CHART_AREA_DIMS.height)
+                .attr('transform', "translate(" + MARGIN.left + "," + MARGIN.top + ")");
+
+        var yAxis = d3.svg.axis()
+                .scale(configs.yScale)
+                .orient('left')
+                .innerTickSize(-CHART_AREA_DIMS.width)
+                .outerTickSize(5);
+
+        chartArea.append('g')
+                .attr('class', 'axis axis-y')
+                .call(yAxis);
+
+        var xAxis = d3.svg.axis()
+                .scale(configs.xScale)
+                .orient('bottom')
+                .innerTickSize(-CHART_AREA_DIMS.height)
+                .outerTickSize(5);
+
+        chartArea.append('g')
+                .attr('class', 'axis axis-x')
+                .attr('transform', "translate(0, " + CHART_AREA_DIMS.height + ")")
+                .call(xAxis);
+
+        var line = chartArea.append('g')
+                .attr('class', 'line')
+                .append('path')
+                .data([data])
+                .attr('d', configs.line)
+                .attr('stroke', 'rgb(222, 64, 1)')
+    }
+
+    d3.json('data.json', function (error, json) {
+        var xDomain = d3.extent(json, function (d) {
+            return d.year
+        });
+        var yDomain = d3.extent(json, function (d) {
+                    return d.value
+                })
+                .map(function (e, i) {
+                    return !i ? Math.min(0, e) : Math.round(e * 1.25);
+                });
+
+        var xScale = d3.scale.linear()
+                .domain(xDomain)
+                .range([0, CHART_AREA_DIMS.width]);
+        var yScale = d3.scale.linear()
+                .domain(yDomain)
+                .range([CHART_AREA_DIMS.height, 0]);
+
+        var line = d3.svg.line()
+                .x(function (d) {
+                    return xScale(d.year);
+                })
+                .y(function (d) {
+                    return yScale(d.value);
+                });
+
+        drawLineChart(document.getElementById('chart-0'), json, {
+            xDomain: xDomain,
+            yDomain: yDomain,
+            xScale: xScale,
+            yScale: yScale,
+            line: line
+        });
+    });
+</script>
+</body>
+</html>
