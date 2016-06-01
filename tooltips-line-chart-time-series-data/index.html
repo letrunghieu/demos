@@ -7,7 +7,11 @@
     <title>Tooltips for D3JS line chart with time series data</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"
           type="text/css"/>
+    <link href='https://fonts.googleapis.com/css?family=Crimson+Text|Lato' rel='stylesheet' type='text/css'>
     <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
         path.domain, .tick line {
             fill: none;
             stroke: #000;
@@ -24,6 +28,12 @@
 
         .area path {
             stroke: none;
+        }
+        
+        .chart-title {
+            text-align: center;
+            font-family: 'Crimson Text', serif;
+            font-size: 16px;
         }
     </style>
 </head>
@@ -47,6 +57,7 @@
         width: WIDTH - MARGIN.left - MARGIN.right,
         height: HEIGHT - MARGIN.top - MARGIN.bottom
     };
+    const CHART_TITLE = "Annual sheep population (1000s) in England & Wales 1867 - 1939";
 
     function drawLineChart(dom, data, configs) {
         var svg = d3.select(dom)
@@ -54,6 +65,13 @@
                 .attr('class', 'line-chart')
                 .attr('width', WIDTH)
                 .attr('height', HEIGHT);
+
+        var chartTitle = d3.select(dom)
+                .append('div')
+                .attr('class', 'chart-title')
+                .style('width', CHART_AREA_DIMS.width + "px")
+                .style('padding-left', MARGIN.left + "px")
+                .text(CHART_TITLE);
 
         var chartArea = svg.append('g')
                 .attr('width', CHART_AREA_DIMS.width)
