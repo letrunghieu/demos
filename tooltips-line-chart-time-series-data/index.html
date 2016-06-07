@@ -49,6 +49,14 @@
         <div id="chart-0"></div>
     </div>
 </section>
+<section>
+    <header>
+        <h2>Approach 1: vertical line</h2>
+    </header>
+    <div>
+        <div id="chart-1"></div>
+    </div>
+</section>
 <script>
     const MARGIN = {top: 20, right: 20, bottom: 40, left: 80};
     const WIDTH = 1000;
@@ -107,6 +115,61 @@
                 .attr('stroke', 'rgb(222, 64, 1)')
     }
 
+    function drawLineChartTooltip1(dom, data, configs) {
+        var svg = d3.select(dom)
+                .append('svg')
+                .attr('class', 'line-chart')
+                .attr('width', WIDTH)
+                .attr('height', HEIGHT);
+
+        var chartTitle = d3.select(dom)
+                .append('div')
+                .attr('class', 'chart-title')
+                .style('width', CHART_AREA_DIMS.width + "px")
+                .style('padding-left', MARGIN.left + "px")
+                .text(CHART_TITLE);
+
+        var chartArea = svg.append('g')
+                .attr('width', CHART_AREA_DIMS.width)
+                .attr('height', CHART_AREA_DIMS.height)
+                .attr('transform', "translate(" + MARGIN.left + "," + MARGIN.top + ")");
+
+        var yAxis = d3.svg.axis()
+                .scale(configs.yScale)
+                .orient('left')
+                .innerTickSize(-CHART_AREA_DIMS.width)
+                .outerTickSize(5);
+
+        chartArea.append('g')
+                .attr('class', 'axis axis-y')
+                .call(yAxis);
+
+        var xAxis = d3.svg.axis()
+                .scale(configs.xScale)
+                .orient('bottom')
+                .innerTickSize(-CHART_AREA_DIMS.height)
+                .outerTickSize(5);
+
+        chartArea.append('g')
+                .attr('class', 'axis axis-x')
+                .attr('transform', "translate(0, " + CHART_AREA_DIMS.height + ")")
+                .call(xAxis);
+
+        var line = chartArea.append('g')
+                .attr('class', 'line')
+                .append('path')
+                .data([data])
+                .attr('d', configs.line)
+                .attr('stroke', 'rgb(222, 64, 1)');
+
+        // Handle the mouse over effect
+        svg.on('mouseover', function() {
+            var coords = d3.mouse(this);
+            var calCoords = [coords[0] - MARGIN.left, coords[1] - MARGIN.top];
+
+        });
+    }
+
     d3.json('data.json', function (error, json) {
         var xDomain = d3.extent(json, function (d) {
             return d.year
@@ -133,13 +196,16 @@
                     return yScale(d.value);
                 });
 
-        drawLineChart(document.getElementById('chart-0'), json, {
+        var configs = {
             xDomain: xDomain,
             yDomain: yDomain,
             xScale: xScale,
             yScale: yScale,
             line: line
-        });
+        };
+
+        drawLineChart(document.getElementById('chart-0'), json, configs);
+        drawLineChartTooltip1(document.getElementById('chart-1'), json, configs);
     });
 </script>
 </body>
