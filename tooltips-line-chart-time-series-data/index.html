@@ -12,6 +12,7 @@
         body {
             font-family: 'Lato', sans-serif;
         }
+
         path.domain, .tick line {
             fill: none;
             stroke: #000;
@@ -29,7 +30,7 @@
         .area path {
             stroke: none;
         }
-        
+
         .chart-title {
             text-align: center;
             font-family: 'Crimson Text', serif;
@@ -162,11 +163,30 @@
                 .attr('d', configs.line)
                 .attr('stroke', 'rgb(222, 64, 1)');
 
+        var focus = chartArea.append('circle')
+                .attr('class', 'focus')
+                .attr('r', 3)
+                .style('fill', 'rgb(222, 64, 1)')
+                .style('opacity', 0);
+
         // Handle the mouse over effect
-        svg.on('mouseover', function() {
+        svg.on('mouseover', function () {
             var coords = d3.mouse(this);
             var calCoords = [coords[0] - MARGIN.left, coords[1] - MARGIN.top];
+            var invertedX = Math.round(configs.xScale.invert(calCoords[0]));
+            var index = d3.bisector(function (d) {
+                return d.year;
+            }).left(data, invertedX);
 
+            if (!!data[index]) {
+                console.log(data[index], invertedX, calCoords);
+                focus.transition().style('opacity', 1)
+                        .attr('cx', configs.xScale(data[index].year))
+                        .attr('cy', configs.yScale(data[index].value));
+            }
+        });
+        svg.on('mouseout', function () {
+            focus.style('opacity', 0)
         });
     }
 
@@ -175,8 +195,8 @@
             return d.year
         });
         var yDomain = d3.extent(json, function (d) {
-                    return d.value
-                })
+            return d.value
+        })
                 .map(function (e, i) {
                     return !i ? Math.min(0, e) : Math.round(e * 1.25);
                 });
