@@ -1,0 +1,45 @@
+<script>
+    var MARGIN = {top: 20, right: 20, bottom: 40, left: 80};
+    var WIDTH = 1000;
+    var HEIGHT = 300;
+    var CHART_AREA_DIMS = {
+        width: WIDTH - MARGIN.left - MARGIN.right,
+        height: HEIGHT - MARGIN.top - MARGIN.bottom
+    };
+    var CHART_TITLE = "Annual sheep population (1000s) in England & Wales 1867 - 1939";
+
+    d3.json('data.json', function (error, json) {
+        var xDomain = d3.extent(json, function (d) {
+            return d.year;
+        });
+        var yDomain = d3.extent(json, function (d) {
+            return d.value;
+        }).map(function (e, i) {
+            return !i ? Math.min(0, e) : Math.round(e * 1.25);
+        });
+
+        var xScale = d3.scale.linear()
+                .domain(xDomain)
+                .range([0, CHART_AREA_DIMS.width]);
+        var yScale = d3.scale.linear()
+                .domain(yDomain)
+                .range([CHART_AREA_DIMS.height, 0]);
+
+        var line = d3.svg.line()
+                .x(function (d) {
+                    return xScale(d.year);
+                }).y(function (d) {
+                    return yScale(d.value);
+                });
+
+        var configs = {
+            xDomain: xDomain,
+            yDomain: yDomain,
+            xScale: xScale,
+            yScale: yScale,
+            line: line
+        };
+
+        drawLineChart(document.getElementById('chart'), json, configs);
+    });
+</script>
