@@ -1,0 +1,94 @@
+---
+layout: d3
+title: Line chart without tooltips
+excerpt: A simple line chart without any tooltip implemented
+---
+<div id="chart-container">
+    <div id="chart"></div>
+    <div id="tooltip"></div>
+</div>
+{% include dataviz/tooltips-line-chart-time-series-data/main-script.html %}
+
+<script>
+    function drawLineChart(dom, data, configs) {
+        var svg = d3.select(dom)
+                .append('svg')
+                .attr('class', 'line-chart')
+                .attr('width', WIDTH)
+                .attr('height', HEIGHT);
+
+        var chartTitle = d3.select(dom)
+                .append('div')
+                .attr('class', 'chart-title')
+                .style('width', CHART_AREA_DIMS.width + "px")
+                .style('padding-left', MARGIN.left + "px")
+                .text(CHART_TITLE);
+
+        var chartArea = svg.append('g')
+                .attr('width', CHART_AREA_DIMS.width)
+                .attr('height', CHART_AREA_DIMS.height)
+                .attr('transform', "translate(" + MARGIN.left + "," + MARGIN.top + ")");
+
+        var yAxis = d3.svg.axis()
+                .scale(configs.yScale)
+                .orient('left')
+                .innerTickSize(-CHART_AREA_DIMS.width)
+                .outerTickSize(5);
+
+        chartArea.append('g')
+                .attr('class', 'axis axis-y')
+                .call(yAxis);
+
+        var xAxis = d3.svg.axis()
+                .scale(configs.xScale)
+                .orient('bottom')
+                .innerTickSize(-CHART_AREA_DIMS.height)
+                .outerTickSize(5);
+
+        chartArea.append('g')
+                .attr('class', 'axis axis-x')
+                .attr('transform', "translate(0, " + CHART_AREA_DIMS.height + ")")
+                .call(xAxis);
+
+        var line = chartArea.append('g')
+                .attr('class', 'line')
+                .append('path')
+                .data([data])
+                .attr('d', configs.line)
+                .attr('stroke', 'rgb(222, 64, 1)');
+
+        var focus = chartArea.append('circle')
+                .attr('class', 'focus')
+                .attr('r', 3)
+                .style('fill', 'rgb(222, 64, 1)')
+                .style('opacity', 0);
+
+        var tooltip = d3.select(document.getElementById('tooltip'));
+
+        // Handle the mouse over effect
+        svg.on('mouseover', function () {
+            var coords = d3.mouse(this);
+            var calCoords = [coords[0] - MARGIN.left, coords[1] - MARGIN.top];
+            var invertedX = Math.round(configs.xScale.invert(calCoords[0]));
+            var index = d3.bisector(function (d) {
+                return d.year;
+            }).left(data, invertedX);
+
+            if (!!data[index]) {
+                var dataPoint = data[index];
+                var newX = configs.xScale(dataPoint.year);
+                var newY = configs.yScale(data[index].value);
+                focus.style('opacity', 1)
+                        .attr('cx', newX)
+                        .attr('cy', newY);
+                tooltip.html("<table><tr><td>Year</td><td>" + dataPoint.year + "</td></tr><tr><td>Value</td><td>" + dataPoint.value + "</td></tr></table>")
+                        .style('top', newY)
+                        .style('left', newX);
+
+            }
+        });
+        svg.on('mouseout', function () {
+            focus.style('opacity', 0);
+        });
+    }
+</script>
