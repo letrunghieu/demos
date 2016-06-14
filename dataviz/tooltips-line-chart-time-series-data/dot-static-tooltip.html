@@ -82,8 +82,8 @@ excerpt: A simple line chart without any tooltip implemented
                         .attr('cx', newX)
                         .attr('cy', newY);
                 tooltip.html("<table><tr><td>Year</td><td>" + dataPoint.year + "</td></tr><tr><td>Value</td><td>" + dataPoint.value + "</td></tr></table>")
-                        .style('top', newY)
-                        .style('left', newX);
+                        .style('top', newY + 'px')
+                        .style('left', newX + 'px'); 
 
             }
         });
