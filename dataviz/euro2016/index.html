@@ -207,51 +207,9 @@
 <script src="euro2016.js"></script>
 <script>
     var euro = new Euro();
-    d3.json('groups.json', function (error, json) {
+    d3.json('group-stage.json', function (error, json) {
         euro.schedule(json);
-        drawGroups(euro)
     });
-
-    function drawGroups(euro) {
-        var groups = d3.selectAll('div.group')
-                .data(euro.groups);
-
-
-        groups.selectAll('.group-name')
-                .data(function (d) {
-                    return [d];
-                })
-                .text(function (d) {
-                    return "Group " + d.name;
-                })
-
-        groups.selectAll('tr')
-                .data(function (d) {
-                    return d.teams;
-                })
-                .selectAll('td')
-                .data(function (d) {
-                    return [d.position, d.code, d.points];
-                })
-                .text(function (d) {
-                    return d;
-                });
-    }
-
-    function getGroupHtml(group) {
-        return "<div class='group-name'>Group " + group.name + "</div>" +
-                "<div class='group-table'>" +
-                "<table class='table table-bordered table-condensed'>" +
-                group.teams.map(function (team) {
-                    return "<tr>" +
-                            "<td class='team-position'>" + (team.position) + "</td>" +
-                            "<td class='team-code'>" + (team.code) + "</td>" +
-                            "<td class='team-points'>0</td>" +
-                            "</tr>";
-                }).join("") +
-                "</table>" +
-                "</div>";
-    }
 </script>
 </body>
 </html>
