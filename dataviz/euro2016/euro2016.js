@@ -14,6 +14,8 @@ function Team(nation) {
     this.nation = nation;
     this.position = 1;
     this.code = "";
+
+    this.points = 0;
 }
 
 /**
