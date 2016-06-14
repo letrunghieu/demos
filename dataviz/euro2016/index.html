@@ -12,14 +12,51 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"
           type="text/css"/>
     <link href='https://fonts.googleapis.com/css?family=Crimson+Text|Lato' rel='stylesheet' type='text/css'>
+    <link href='style.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div id="groups"></div>
+        </div>
+        <div class="col-md-9">
+            <div id="knockout"></div>
+        </div>
+    </div>
+</div>
 <script src="euro2016.js"></script>
 <script>
     var euro = new Euro();
-    d3.json('groups.json', function(error, json) {
+    d3.json('groups.json', function (error, json) {
         euro.schedule(json);
+        drawGroups(euro)
     });
+
+    function drawGroups(euro) {
+        var groups = d3.select('#groups').selectAll('div.group')
+                .data(euro.groups);
+
+        groups.enter()
+                .append('div')
+                .classed('group', true)
+                .html(getGroupHtml)
+    }
+
+    function getGroupHtml(group) {
+        return "<div class='group-name'>Group " + group.name + "</div>" +
+                "<div class='group-table'>" +
+                "<table class='table table-bordered table-condensed'>" +
+                group.teams.map(function (team) {
+                    return "<tr>" +
+                            "<td class='team-position'>" + (team.position) + "</td>" +
+                            "<td class='team-code'>" + (team.code) + "</td>" +
+                            "<td class='team-points'>0</td>" +
+                            "</tr>";
+                }).join("") +
+                "</table>" +
+                "</div>";
+    }
 </script>
 </body>
 </html>
