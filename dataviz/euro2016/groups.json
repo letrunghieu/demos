@@ -1,0 +1,361 @@
+{
+  "groups": [
+    {
+      "group": "A",
+      "teams": [
+        {
+          "code": "FRA",
+          "name": "France"
+        },
+        {
+          "code": "ROU",
+          "name": "Romania"
+        },
+        {
+          "code": "ALB",
+          "name": "Albania"
+        },
+        {
+          "code": "SUI",
+          "name": "Switzerland"
+        }
+      ]
+    },
+    {
+      "group": "B",
+      "teams": [
+        {
+          "code": "ENG",
+          "name": "England"
+        },
+        {
+          "code": "RUS",
+          "name": "Russia"
+        },
+        {
+          "code": "WAL",
+          "name": "Wales"
+        },
+        {
+          "code": "SVK",
+          "name": "Slovakia"
+        }
+      ]
+    },
+    {
+      "group": "C",
+      "teams": [
+        {
+          "code": "GER",
+          "name": "Germany"
+        },
+        {
+          "code": "URK",
+          "name": "Ukraine"
+        },
+        {
+          "code": "POL",
+          "name": "Poland"
+        },
+        {
+          "code": "NIR",
+          "name": "N. Ireland"
+        }
+      ]
+    },
+    {
+      "group": "D",
+      "teams": [
+        {
+          "code": "ESP",
+          "name": "Spain"
+        },
+        {
+          "code": "CZE",
+          "name": "Czech Republic"
+        },
+        {
+          "code": "TUR",
+          "name": "Turkey"
+        },
+        {
+          "code": "CRO",
+          "name": "Croatia"
+        }
+      ]
+    },
+    {
+      "group": "E",
+      "teams": [
+        {
+          "code": "BEL",
+          "name": "Belgium"
+        },
+        {
+          "code": "ITA",
+          "name": "Italy"
+        },
+        {
+          "code": "IRL",
+          "name": "Rep. Of Ireland"
+        },
+        {
+          "code": "SWE",
+          "name": "Sweden"
+        }
+      ]
+    },
+    {
+      "group": "F",
+      "teams": [
+        {
+          "code": "POR",
+          "name": "Portugal"
+        },
+        {
+          "code": "ISL",
+          "name": "Iceland"
+        },
+        {
+          "code": "AUT",
+          "name": "Austria"
+        },
+        {
+          "code": "HUN",
+          "name": "Hungary"
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "stage": "Group stage",
+      "matches": [
+        [
+          "A1",
+          "A2"
+        ],
+        [
+          "A3",
+          "A4"
+        ],
+        [
+          "B1",
+          "B2"
+        ],
+        [
+          "B3",
+          "B4"
+        ],
+        [
+          "C1",
+          "C2"
+        ],
+        [
+          "C3",
+          "C4"
+        ],
+        [
+          "D1",
+          "D2"
+        ],
+        [
+          "D3",
+          "D4"
+        ],
+        [
+          "E1",
+          "E2"
+        ],
+        [
+          "E3",
+          "E4"
+        ],
+        [
+          "F1",
+          "F2"
+        ],
+        [
+          "F3",
+          "F4"
+        ],
+        [
+          "A1",
+          "A3"
+        ],
+        [
+          "A2",
+          "A4"
+        ],
+        [
+          "B1",
+          "B3"
+        ],
+        [
+          "B2",
+          "B4"
+        ],
+        [
+          "C1",
+          "C3"
+        ],
+        [
+          "C2",
+          "C4"
+        ],
+        [
+          "D1",
+          "D3"
+        ],
+        [
+          "D2",
+          "D4"
+        ],
+        [
+          "E1",
+          "E3"
+        ],
+        [
+          "E2",
+          "E4"
+        ],
+        [
+          "F1",
+          "F3"
+        ],
+        [
+          "F2",
+          "F4"
+        ],
+        [
+          "A4",
+          "A1"
+        ],
+        [
+          "A2",
+          "A3"
+        ],
+        [
+          "B4",
+          "B1"
+        ],
+        [
+          "B2",
+          "B3"
+        ],
+        [
+          "C4",
+          "C1"
+        ],
+        [
+          "C2",
+          "C3"
+        ],
+        [
+          "D4",
+          "D1"
+        ],
+        [
+          "D2",
+          "D3"
+        ],
+        [
+          "E4",
+          "E1"
+        ],
+        [
+          "E2",
+          "E3"
+        ],
+        [
+          "F4",
+          "F1"
+        ],
+        [
+          "F2",
+          "F3"
+        ]
+      ]
+    },
+    {
+      "stage": "Knockout phase",
+      "matches": [
+        [
+          "RA",
+          "RC"
+        ],
+        [
+          "WD",
+          "3B/E/F"
+        ],
+        [
+          "WB",
+          "3A/C/D"
+        ],
+        [
+          "WF",
+          "RE"
+        ],
+        [
+          "WC",
+          "3A/B/F"
+        ],
+        [
+          "WE",
+          "RD"
+        ],
+        [
+          "WA",
+          "3C/D/E"
+        ],
+        [
+          "RB",
+          "RF"
+        ]
+      ]
+    },
+    {
+      "stage": "Quarter-finals",
+      "matches": [
+        [
+          "K1",
+          "K2"
+        ],
+        [
+          "K3",
+          "K4"
+        ],
+        [
+          "K5",
+          "K6"
+        ],
+        [
+          "K7",
+          "K8"
+        ]
+      ]
+    },
+    {
+      "stage": "Semi-finals",
+      "matches": [
+        [
+          "Q1",
+          "Q2"
+        ],
+        [
+          "Q3",
+          "Q4"
+        ]
+      ]
+    },
+    {
+      "stage": "Final",
+      "matches": [
+        [
+          "S1",
+          "S2"
+        ]
+      ]
+    }
+  ]
+}
