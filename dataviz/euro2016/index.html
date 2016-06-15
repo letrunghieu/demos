@@ -35,17 +35,17 @@
 </div>
 <script>
     var DIMENSIONS = {
-        radius: 200,
-        minTeamThickness: 40,
+        radius: 190,
+        minTeamThickness: 30,
         eachTeamThickness: 20,
-        groupThickness: 10,
+        groupThickness: 0,
         groupPadAngle: 0.1,
         chordPadAngle: 0.01,
         chordPadAngleEdge: 0.02,
         width: 580,
-        height: 500,
+        height: 460,
         margin: {
-            top: 50, right: 10, bottom: 10, left: 100
+            top: 40, right: 10, bottom: 10, left: 100
         }
     };
 
@@ -159,7 +159,9 @@
                 .attr('dy', 6);
 
         var matches = g.selectAll('path.match')
-                .data(matchesData);
+                .data(matchesData, function(d){
+                    return d.source.teamCode + "-" + d.target.teamCode;
+                });
 
         var colors = d3.scale.category20();
 
@@ -345,7 +347,14 @@
             } else {
                 return 1;
             }
-        })
+        }).style('margin-left', function(d) {
+            var group = d.group;
+            if (chosen3rdGroupTeams.has(group)) {
+                return "182px";
+            } else {
+                return "0px";
+            }
+        });
     }
 
     drawChord();
