@@ -1,14 +1,19 @@
+---
+title: EURO 2016 Knockout phase matches
+excerpt: This visualization demonstrates all possibles cases of matches of EURO 2016 knockout phase based on the combination of 4 among 6 third-placed teams.
+---
 <!DOCTYPE html>
 <html>
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Euro 2016</title>
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
     <meta name="description"
           content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    {% include open-graph.html %}
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"
           type="text/css"/>
     <link href='https://fonts.googleapis.com/css?family=Crimson+Text|Lato' rel='stylesheet' type='text/css'>
@@ -31,6 +36,20 @@
         <p class="legend">
             "W" stands for group winner, "R" for group runners-up and "3" for third-placed team of each group.
         </p>
+    </div>
+    <div id="content">
+        <p>
+            The six group winners, six group runners-up and the four best third-placed teams
+            play the round of 16 in single leg knockout matches. All scenarios are visualized
+            in the diagram above. Click buttons on the right column to select up to 4 third-placed teams qualified
+            to advance to the knockout phase. Each match is presented by a chord between two annular sectors.
+        </p>
+        <p>
+            When all qualified teams are not defined (the number of selected buttons is less than 4), there can be more
+            than one chords connected to a sector. Those chords are faded. A chord is highlighted when the mouse is hovered
+            over a sector connected to the chord.
+        </p>
+        {% include hieule.info.html %}
     </div>
 </div>
 <script>
