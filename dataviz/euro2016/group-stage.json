@@ -1,0 +1,420 @@
+{
+  "groups": [
+    {
+      "group": "A",
+      "teams": [
+        {
+          "code": "FRA",
+          "name": "France"
+        },
+        {
+          "code": "ROU",
+          "name": "Romania"
+        },
+        {
+          "code": "ALB",
+          "name": "Albania"
+        },
+        {
+          "code": "SUI",
+          "name": "Switzerland"
+        }
+      ]
+    },
+    {
+      "group": "B",
+      "teams": [
+        {
+          "code": "ENG",
+          "name": "England"
+        },
+        {
+          "code": "RUS",
+          "name": "Russia"
+        },
+        {
+          "code": "WAL",
+          "name": "Wales"
+        },
+        {
+          "code": "SVK",
+          "name": "Slovakia"
+        }
+      ]
+    },
+    {
+      "group": "C",
+      "teams": [
+        {
+          "code": "GER",
+          "name": "Germany"
+        },
+        {
+          "code": "URK",
+          "name": "Ukraine"
+        },
+        {
+          "code": "POL",
+          "name": "Poland"
+        },
+        {
+          "code": "NIR",
+          "name": "N. Ireland"
+        }
+      ]
+    },
+    {
+      "group": "D",
+      "teams": [
+        {
+          "code": "ESP",
+          "name": "Spain"
+        },
+        {
+          "code": "CZE",
+          "name": "Czech Republic"
+        },
+        {
+          "code": "TUR",
+          "name": "Turkey"
+        },
+        {
+          "code": "CRO",
+          "name": "Croatia"
+        }
+      ]
+    },
+    {
+      "group": "E",
+      "teams": [
+        {
+          "code": "BEL",
+          "name": "Belgium"
+        },
+        {
+          "code": "ITA",
+          "name": "Italy"
+        },
+        {
+          "code": "IRL",
+          "name": "Rep. Of Ireland"
+        },
+        {
+          "code": "SWE",
+          "name": "Sweden"
+        }
+      ]
+    },
+    {
+      "group": "F",
+      "teams": [
+        {
+          "code": "POR",
+          "name": "Portugal"
+        },
+        {
+          "code": "ISL",
+          "name": "Iceland"
+        },
+        {
+          "code": "AUT",
+          "name": "Austria"
+        },
+        {
+          "code": "HUN",
+          "name": "Hungary"
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "number": 1,
+      "team1": "A1",
+      "team2": "A2",
+      "time": "6/10/2016 21:00",
+      "city": "St-Denis",
+      "results": "2-1"
+    },
+    {
+      "number": 2,
+      "team1": "A3",
+      "team2": "A4",
+      "time": "6/11/2016 15:00",
+      "city": "Lens",
+      "results": "0-1"
+    },
+    {
+      "number": 3,
+      "team1": "B3",
+      "team2": "B4",
+      "time": "6/11/2016 18:00",
+      "city": "Bordeaux",
+      "results": "2-1"
+    },
+    {
+      "number": 4,
+      "team1": "B1",
+      "team2": "B2",
+      "time": "6/11/2016 21:00",
+      "city": "Marseille",
+      "results": "1-1"
+    },
+    {
+      "number": 5,
+      "team1": "D3",
+      "team2": "D4",
+      "time": "6/12/2016 15:00",
+      "city": "Paris",
+      "results": "0-1"
+    },
+    {
+      "number": 6,
+      "team1": "C3",
+      "team2": "C4",
+      "time": "6/12/2016 18:00",
+      "city": "Nice",
+      "results": "1-0"
+    },
+    {
+      "number": 7,
+      "team1": "C1",
+      "team2": "C2",
+      "time": "6/12/2016 21:00",
+      "city": "Lille",
+      "results": "2-0"
+    },
+    {
+      "number": 8,
+      "team1": "D1",
+      "team2": "D2",
+      "time": "6/13/2016 15:00",
+      "city": "Toulouse",
+      "results": "1-0"
+    },
+    {
+      "number": 9,
+      "team1": "E3",
+      "team2": "E4",
+      "time": "6/13/2016 18:00",
+      "city": "St-Denis",
+      "results": "1-1"
+    },
+    {
+      "number": 10,
+      "team1": "E1",
+      "team2": "E2",
+      "time": "6/13/2016 21:00",
+      "city": "Lyon",
+      "results": "0-2"
+    },
+    {
+      "number": 11,
+      "team1": "F3",
+      "team2": "F4",
+      "time": "6/14/2016 18:00",
+      "city": "Bordeaux",
+      "results": "-"
+    },
+    {
+      "number": 12,
+      "team1": "F1",
+      "team2": "F2",
+      "time": "6/14/2016 21:00",
+      "city": "St-Etienne",
+      "results": "-"
+    },
+    {
+      "number": 13,
+      "team1": "B2",
+      "team2": "B4",
+      "time": "6/15/2016 15:00",
+      "city": "Lille",
+      "results": "-"
+    },
+    {
+      "number": 14,
+      "team1": "A2",
+      "team2": "A4",
+      "time": "6/15/2016 18:00",
+      "city": "Paris",
+      "results": "-"
+    },
+    {
+      "number": 15,
+      "team1": "A1",
+      "team2": "A3",
+      "time": "6/15/2016 21:00",
+      "city": "Marseille",
+      "results": "-"
+    },
+    {
+      "number": 16,
+      "team1": "B1",
+      "team2": "B3",
+      "time": "6/16/2016 15:00",
+      "city": "Lens",
+      "results": "-"
+    },
+    {
+      "number": 17,
+      "team1": "C2",
+      "team2": "C4",
+      "time": "6/16/2016 18:00",
+      "city": "Lyon",
+      "results": "-"
+    },
+    {
+      "number": 18,
+      "team1": "C1",
+      "team2": "C3",
+      "time": "6/16/2016 21:00",
+      "city": "St-Denis",
+      "results": "-"
+    },
+    {
+      "number": 19,
+      "team1": "E2",
+      "team2": "E4",
+      "time": "6/17/2016 15:00",
+      "city": "Toulouse",
+      "results": "-"
+    },
+    {
+      "number": 20,
+      "team1": "D2",
+      "team2": "D4",
+      "time": "6/17/2016 18:00",
+      "city": "St-Etienne",
+      "results": "-"
+    },
+    {
+      "number": 21,
+      "team1": "D1",
+      "team2": "D3",
+      "time": "6/17/2016 21:00",
+      "city": "Nice",
+      "results": "-"
+    },
+    {
+      "number": 22,
+      "team1": "E1",
+      "team2": "E3",
+      "time": "6/18/2016 15:00",
+      "city": "Bordeaux",
+      "results": "-"
+    },
+    {
+      "number": 23,
+      "team1": "F2",
+      "team2": "F4",
+      "time": "6/18/2016 18:00",
+      "city": "Marseille",
+      "results": "-"
+    },
+    {
+      "number": 24,
+      "team1": "F1",
+      "team2": "F3",
+      "time": "6/18/2016 21:00",
+      "city": "Paris",
+      "results": "-"
+    },
+    {
+      "number": 25,
+      "team1": "A4",
+      "team2": "A1",
+      "time": "6/19/2016 21:00",
+      "city": "Lille",
+      "results": "-"
+    },
+    {
+      "number": 26,
+      "team1": "A2",
+      "team2": "A3",
+      "time": "6/19/2016 21:00",
+      "city": "Lyon",
+      "results": "-"
+    },
+    {
+      "number": 27,
+      "team1": "B4",
+      "team2": "B1",
+      "time": "6/20/2016 21:00",
+      "city": "St-Etienne",
+      "results": "-"
+    },
+    {
+      "number": 28,
+      "team1": "B2",
+      "team2": "B3",
+      "time": "6/20/2016 21:00",
+      "city": "Toulouse",
+      "results": "-"
+    },
+    {
+      "number": 29,
+      "team1": "C4",
+      "team2": "C1",
+      "time": "6/21/2016 18:00",
+      "city": "Paris",
+      "results": "-"
+    },
+    {
+      "number": 30,
+      "team1": "C2",
+      "team2": "C3",
+      "time": "6/21/2016 18:00",
+      "city": "Marseille",
+      "results": "-"
+    },
+    {
+      "number": 31,
+      "team1": "D4",
+      "team2": "D1",
+      "time": "6/21/2016 21:00",
+      "city": "Bordeaux",
+      "results": "-"
+    },
+    {
+      "number": 32,
+      "team1": "D2",
+      "team2": "D3",
+      "time": "6/21/2016 21:00",
+      "city": "Lens",
+      "results": "-"
+    },
+    {
+      "number": 33,
+      "team1": "F4",
+      "team2": "F1",
+      "time": "6/22/2016 18:00",
+      "city": "Lyon",
+      "results": "-"
+    },
+    {
+      "number": 34,
+      "team1": "F2",
+      "team2": "F3",
+      "time": "6/22/2016 18:00",
+      "city": "St-Denis",
+      "results": "-"
+    },
+    {
+      "number": 35,
+      "team1": "E4",
+      "team2": "E1",
+      "time": "6/22/2016 21:00",
+      "city": "Nice",
+      "results": "-"
+    },
+    {
+      "number": 36,
+      "team1": "E2",
+      "team2": "E3",
+      "time": "6/22/2016 21:00",
+      "city": "Lille",
+      "results": "-"
+    }
+  ]
+}

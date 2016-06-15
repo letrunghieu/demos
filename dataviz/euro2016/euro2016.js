@@ -22,6 +22,8 @@ function Team(nation) {
         drawn: 0,
         points: 0
     };
+
+    this.played = 0;
     this.matches = [];
 }
 
@@ -52,11 +54,15 @@ Team.prototype.addMatch = function (match) {
         } else {
             this.stas.lost++;
         }
+
+        this.played++;
     }
 
     this.matches.push({
+        against: isHome ? match.team2 : match.team1,
         match: match,
-        isHome: isHome
+        isHome: isHome,
+        result: match.results.length ? [me, other] : null
     });
 };
 
