@@ -164,7 +164,7 @@
             g.teams.forEach(function (t, j) {
                 results.push({
                     innerRadius: DIMENSIONS.radius,
-                    outerRadius: DIMENSIONS.radius + DIMENSIONS.minTeamThickness + (2 - j) * DIMENSIONS.eachTeamThickness,
+                    outerRadius: DIMENSIONS.radius + DIMENSIONS.minTeamThickness,
                     startAngle: groupStartAngle + j * teamAngle,
                     endAngle: groupStartAngle + (j + 1) * teamAngle,
                     color: groupColorScale(i),
@@ -301,10 +301,10 @@
                     return "Group " + d.group + " third-placed team"
                 });
 
-        buttons.style('border-color', function (d) {
+        buttons.style('border-color', function (d, i) {
             var group = d.group;
             if (chosen3rdGroupTeams.has(group)) {
-                return "#999";
+                return groupColorScale(i);
             } else {
                 return "transparent";
             }
