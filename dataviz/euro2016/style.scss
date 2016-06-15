@@ -3,6 +3,15 @@
 body {
   font-family: 'Lato', sans-serif;
 }
+#artwork {
+  width: 1000px;
+}
+#heading {
+  text-align: center;
+  h1 {
+    font-size: 20px;
+  }
+}
 .group-buttons {
   display: inline-block;
   vertical-align: top;
