@@ -1,0 +1,48 @@
+---
+---
+body {
+  font-family: 'Lato', sans-serif;
+}
+#artwork {
+  width: 1000px;
+  margin: 1em auto;
+  text-align: center;
+}
+#heading {
+  text-align: center;
+  h1 {
+    font-size: 20px;
+  }
+}
+.group-buttons {
+  display: inline-block;
+  vertical-align: top;
+  width: 380px;
+  text-align: center;
+}
+
+.group-button {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s linear;
+
+  &:hover {
+    border-color: #999;
+  }
+
+  span {
+    color: black;
+    display: inline-block;
+    padding: 7px 5px;
+    width: 176px;
+    text-align: center;
+  }
+}
+
+.legend {
+  margin-bottom: 0;
+  font-family: "Crimson Text", serif;
+}

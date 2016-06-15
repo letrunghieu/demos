@@ -4,7 +4,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Euro 2016</title>
+    <title>Euro 2012</title>
     <meta name="description"
           content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
@@ -18,25 +18,25 @@
 <div id="artwork">
     <div id="chart"></div>
     <div id="heading">
-        <h1>EURO 2016 Knockout phase matches</h1>
+        <h1>EURO 2012 Knockout phase matches</h1>
         <p class="ref">
             Source:
-            <a href="http://www.uefa.com/MultimediaFiles/Download/Regulations/uefaorg/Regulations/02/03/92/81/2039281_DOWNLOAD.pdf">
+            <a href="http://www.uefa.com/multimediafiles/download/competitions/euro/91/87/57/918757_download.pdf">
                 Regulations of the UEFA European Football Championship
             </a>
         </p>
         <p class="legend">
-            A, B, C, D, E, F is the name of a group.
+            A, B, C, D is the name of a group.
         </p>
         <p class="legend">
-            "W" stands for group winner, "R" for group runners-up and "3" for third-placed team of each group.
+            "W" stands for group winner, "R" for group runners-up of each group.
         </p>
     </div>
 </div>
 <script>
     var DIMENSIONS = {
         radius: 190,
-        minTeamThickness: 40,
+        minTeamThickness: 30,
         eachTeamThickness: 20,
         groupThickness: 0,
         groupPadAngle: 0.1,
@@ -50,33 +50,12 @@
     };
 
     var EURO_GROUPS = [
-        {group: 'A', teams: ['WA', 'RA', '3A']},
-        {group: 'B', teams: ['WB', 'RB', '3B']},
-        {group: 'C', teams: ['WC', 'RC', '3C']},
-        {group: 'D', teams: ['WD', 'RD', '3D']},
-        {group: 'E', teams: ['WE', 'RE', '3E']},
-        {group: 'F', teams: ['WF', 'RF', '3F']},
+        {group: 'A', teams: ['WA', 'RA']},
+        {group: 'B', teams: ['WB', 'RB']},
+        {group: 'C', teams: ['WC', 'RC']},
+        {group: 'D', teams: ['WD', 'RD']}
     ];
 
-    var EURO_3RD = [
-        {qualifiedTeams: d3.set(["A", "B", "C", "D"]), opponents: ["C", "D", "A", "B"]},
-        {qualifiedTeams: d3.set(["A", "B", "C", "E"]), opponents: ["C", "A", "B", "E"]},
-        {qualifiedTeams: d3.set(["A", "B", "C", "F"]), opponents: ["C", "A", "B", "F"]},
-        {qualifiedTeams: d3.set(["A", "B", "D", "E"]), opponents: ["D", "A", "B", "E"]},
-        {qualifiedTeams: d3.set(["A", "B", "D", "F"]), opponents: ["D", "A", "B", "F"]},
-        {qualifiedTeams: d3.set(["A", "B", "E", "F"]), opponents: ["E", "A", "B", "F"]},
-        {qualifiedTeams: d3.set(["A", "C", "D", "E"]), opponents: ["C", "D", "A", "E"]},
-        {qualifiedTeams: d3.set(["A", "C", "D", "F"]), opponents: ["C", "D", "A", "F"]},
-        {qualifiedTeams: d3.set(["A", "C", "E", "F"]), opponents: ["C", "A", "F", "E"]},
-        {qualifiedTeams: d3.set(["A", "D", "E", "F"]), opponents: ["D", "A", "F", "E"]},
-        {qualifiedTeams: d3.set(["B", "C", "D", "E"]), opponents: ["C", "D", "B", "E"]},
-        {qualifiedTeams: d3.set(["B", "C", "D", "F"]), opponents: ["C", "D", "B", "F"]},
-        {qualifiedTeams: d3.set(["B", "C", "E", "F"]), opponents: ["E", "C", "B", "F"]},
-        {qualifiedTeams: d3.set(["B", "D", "E", "F"]), opponents: ["E", "D", "B", "F"]},
-        {qualifiedTeams: d3.set(["C", "D", "E", "F"]), opponents: ["C", "D", "F", "E"]}
-    ];
-
-    var chosen3rdGroupTeams = d3.set([]);
     var groupColorScale = d3.scale.category10();
 
     var svg = d3.select('#chart')
@@ -90,13 +69,6 @@
             .attr('width', DIMENSIONS.width - DIMENSIONS.margin.left - DIMENSIONS.margin.right)
             .attr('width', DIMENSIONS.height - DIMENSIONS.margin.top - DIMENSIONS.margin.bottom)
             .attr('transform', "translate(" + (DIMENSIONS.margin.left + DIMENSIONS.radius) + "," + (DIMENSIONS.margin.top + DIMENSIONS.radius) + ")");
-
-    var div = d3.select('#chart')
-            .append('div')
-            .attr('class', 'group-buttons');
-
-    div.append('h4')
-            .text('Choose 4 of 6 third-placed teams to advance to knockout phase')
 
     var arc = d3.svg.arc();
     var chord = d3.svg.chord()
@@ -180,15 +152,15 @@
     }
 
     function chordOpacity(d) {
-        return (d.source.isCertain && d.target.isCertain) ? 0.8 : 0.4;
+        return 0.8;
     }
 
     function layoutTeams(groups) {
         var results = [];
 
-        var teamAngle = (Math.PI / 3 - DIMENSIONS.groupPadAngle) / 3;
+        var teamAngle = (Math.PI / 2 - DIMENSIONS.groupPadAngle) / 2;
         groups.forEach(function (g, i) {
-            var groupStartAngle = Math.PI / 3 * i;
+            var groupStartAngle = Math.PI / 2 * i;
             g.teams.forEach(function (t, j) {
                 results.push({
                     innerRadius: DIMENSIONS.radius,
@@ -196,7 +168,7 @@
                     startAngle: groupStartAngle + j * teamAngle,
                     endAngle: groupStartAngle + (j + 1) * teamAngle,
                     color: groupColorScale(i),
-                    fillOpacity: (j < 2) ? (1 - j * 0.15) : (chosen3rdGroupTeams.has(g.group) ? (1 - j * 0.15) : (chosen3rdGroupTeams.size() < 4) ? 0.4 : 0.1), // the third-placed team
+                    fillOpacity: (1 - j * 0.15),
                     label: t
                 });
             })
@@ -206,29 +178,17 @@
     }
 
     function layoutMatches(groups) {
-        var teams = new Array(18).fill(0);
-        var teamCurrentMatchNumber = new Array(18).fill(0);
+        var teams = new Array(8).fill(0);
+        var teamCurrentMatchNumber = new Array(8).fill(0);
         var matches = [];
 
         // Add matches
         // http://www.uefa.com/MultimediaFiles/Download/Regulations/uefaorg/Regulations/02/03/92/81/2039281_DOWNLOAD.pdf
         // Section 17.03
-        matches.push(addMatch("RA", "RC", teams));
-        getPossibleOpponent("D", chosen3rdGroupTeams.values()).forEach(function (t) {
-            matches.push(addMatch("WD", "3" + t, teams));
-        });
-        getPossibleOpponent("B", chosen3rdGroupTeams.values()).forEach(function (t) {
-            matches.push(addMatch("WB", "3" + t, teams));
-        });
-        matches.push(addMatch("WF", "RE", teams));
-        getPossibleOpponent("C", chosen3rdGroupTeams.values()).forEach(function (t) {
-            matches.push(addMatch("WC", "3" + t, teams));
-        });
-        matches.push(addMatch("WE", "RD", teams));
-        getPossibleOpponent("A", chosen3rdGroupTeams.values()).forEach(function (t) {
-            matches.push(addMatch("WA", "3" + t, teams));
-        });
-        matches.push(addMatch("RB", "RF", teams));
+        matches.push(addMatch("WA", "RB", teams));
+        matches.push(addMatch("WB", "RA", teams));
+        matches.push(addMatch("WC", "RD", teams));
+        matches.push(addMatch("WD", "RC", teams));
 
         // Calculate start and end angle
         matches.forEach(function (m) {
@@ -274,89 +234,12 @@
     function getTeamIndex(teamCode) {
         var groupCode = teamCode.charCodeAt(1) - 65;
         var teamStandingCode = teamCode.charAt(0);
-        var teamIndex = teamStandingCode === "W" ? 0 : (teamStandingCode === "R" ? 1 : 2);
+        var teamIndex = teamStandingCode === "W" ? 0 : 1;
 
-        return 3 * groupCode + teamIndex
-    }
-
-
-    function getPossibleOpponent(winnerGroup, chosen3rdGroups) {
-        var posibleMatches = EURO_3RD.filter(function (r) {
-            return chosen3rdGroups.map(function (g) {
-                return r.qualifiedTeams.has(g);
-            }).reduce(function (a, b) {
-                return a && b;
-            }, true)
-        }).map(function (r) {
-            return r.opponents[winnerGroup.charCodeAt(0) - 65];
-        });
-
-        return d3.set(posibleMatches).values();
-    }
-
-    function drawButtons() {
-
-        var buttons = div.selectAll('a.group-button')
-                .data(EURO_GROUPS);
-
-        buttons.enter()
-                .append('a')
-                .attr('class', 'group-button')
-                .on('click', function (d) {
-                    var group = d.group;
-                    if (chosen3rdGroupTeams.has(group)) {
-                        chosen3rdGroupTeams.remove(group);
-                    } else {
-                        if (chosen3rdGroupTeams.size() < 4) {
-                            chosen3rdGroupTeams.add(group);
-                        }
-                    }
-
-                    drawChord();
-                    drawButtons();
-                })
-                .selectAll('span')
-                .data(function (d, i) {
-                    return [{
-                        color: groupColorScale(i),
-                        group: d.group,
-                    }];
-                })
-                .enter()
-                .append('span')
-                .style('background', function (d) {
-                    return d.color;
-                })
-                .text(function (d) {
-                    return "Group " + d.group + " third-placed team"
-                });
-
-        buttons.style('border-color', function (d, i) {
-            var group = d.group;
-            if (chosen3rdGroupTeams.has(group)) {
-                return groupColorScale(i);
-            } else {
-                return "transparent";
-            }
-        }).style('opacity', function (d) {
-            var group = d.group;
-            if (chosen3rdGroupTeams.size() >= 4 && !chosen3rdGroupTeams.has(group)) {
-                return 0.5;
-            } else {
-                return 1;
-            }
-        }).style('margin-left', function(d) {
-            var group = d.group;
-            if (chosen3rdGroupTeams.has(group)) {
-                return "182px";
-            } else {
-                return "0px";
-            }
-        });
+        return 2 * groupCode + teamIndex
     }
 
     drawChord();
-    drawButtons();
 </script>
 </body>
 </html>
