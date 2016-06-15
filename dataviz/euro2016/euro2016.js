@@ -12,7 +12,7 @@ function Nation(name, code, flag) {
  */
 function Team(nation) {
     this.nation = nation;
-    this.position = 1;
+    this.standing = 1;
     this.code = "";
     this.group = null;
 
@@ -62,7 +62,7 @@ Team.prototype.addMatch = function (match) {
         against: isHome ? match.team2 : match.team1,
         match: match,
         isHome: isHome,
-        result: match.results.length ? [me, other] : null
+        results: match.results.length ? [me, other] : null
     });
 };
 
@@ -80,11 +80,32 @@ Group.prototype.addTeam = function (team) {
     team.group = this;
 };
 
-Group.prototype.sort = function (euro) {
-    var i;
-    for (i = 0; i < Euro.NUM_TEAMS_IN_GROUP; i++) {
-        this.teams[i].position = i + 1;
-    }
+Group.prototype.qualify = function (euro) {
+    var standings = [0, 1, 2, 3];
+
+    var sortingStandings = euro.qualifyByPoints(standings, this.teams);
+    var _this = this;
+
+    var sortingStandings2 = [];
+    var tempArray;
+
+    sortingStandings.forEach(function (ts) {
+        if (ts.length === 1) {
+            sortingStandings2.push(ts);
+        } else {
+            tempArray = euro.qualifySamePointsTeams(ts.map(function (t) {
+                return {
+                    teamIndex: t.teamIndex,
+                    team: _this.teams[t.teamIndex],
+                    points: t.points
+                };
+            }));
+            tempArray.forEach(function (t) {
+                sortingStandings2.push(t);
+            })
+        }
+    });
+
 };
 
 /**
@@ -136,7 +157,7 @@ Euro.prototype.schedule = function (json) {
 
     // sort each group
     for (i = 0; i < Euro.NUM_GROUPS; i++) {
-        this.groups[i].sort(this);
+        this.groups[i].qualify(this);
     }
 };
 
@@ -193,6 +214,114 @@ Euro.prototype.compareTeams = function (team1, team2) {
         }
     }
 };
+
+Euro.prototype.qualifyByPoints = function (standings, teamsArray) {
+    var i, len;
+    var sortingArray = standings.map(function (e) {
+        return {teamIndex: e, points: teamsArray[e].stas.points};
+    }).sort(function (a, b) {
+        // team with greater points comes first
+        return b.points - a.points
+    });
+
+    var finalArray = [];
+    for (i = 0, len = sortingArray.length; i < len; i++) {
+        if (finalArray.length && finalArray[finalArray.length - 1][0].points == sortingArray[i].points) {
+            // this team has the same points as the previous team
+            finalArray[finalArray.length - 1].push(sortingArray[i]);
+        } else {
+            // this team has a smaller points than the previous
+            finalArray.push([sortingArray[i]])
+        }
+    }
+
+    return finalArray;
+}
+
+/**
+ * See http://www.uefa.com/MultimediaFiles/Download/Regulations/uefaorg/Regulations/02/03/92/81/2039281_DOWNLOAD.pdf
+ *
+ * @param qualifyingTeams
+ */
+Euro.prototype.qualifySamePointsTeams = function (qualifyingTeams) {
+    var matches = [];
+    var otherTeams;
+    var i, len;
+
+    // find all matches between teams in question
+    for (i = 0, len = qualifyingTeams.length; i < len - 1; i++) {
+        otherTeams = qualifyingTeams.slice(i + 1).map(function (t) {
+            return t.team.code;
+        });
+        qualifyingTeams[i].team.matches.forEach(function (m) {
+            // if this match is between two of qualifying team and this match has the results
+            if (otherTeams.indexOf(m.against.code) > -1 && !!m.results) {
+                matches.push(m.match);
+            }
+        });
+    }
+
+
+    qualifyingTeams.forEach(function (t) {
+        t.team.tempStats = {points: 0, goalDiff: 0, goalsScored: 0, goalsScoredAway: 0};
+    })
+
+    // calculate the points, goal difference, goals scored and goals scored aways for each team in these matches
+    // 13.01.a,b,c,d
+    matches.forEach(function (m) {
+        var goalDiff = m.results[0] - m.results[1];
+
+        // update team1 stats
+        m.team1.tempStats.points += (goalDiff > 0 ? 3 : (goalDiff === 0 ? 1 : 0))
+        m.team1.tempStats.goalDiff += goalDiff;
+        m.team1.tempStats.goalsScored += m.results[0];
+
+        // update team2 status;
+        m.team2.tempStats.points += (goalDiff < 0 ? 3 : (goalDiff === 0 ? 1 : 0))
+        m.team2.tempStats.goalDiff += -goalDiff;
+        m.team2.tempStats.goalsScored += m.results[1];
+        m.team2.tempStats.goalsScoredAway += m.results[1];
+    });
+
+    var sortingArray = qualifyingTeams.sort(function (t1, t2) {
+        if (t1.team.tempStats.points === t2.team.tempStats.points) {
+            if (t1.team.tempStats.goalDiff === t2.team.tempStats.goalDiff) {
+                if (t1.team.tempStats.goalsScored === t2.team.tempStats.goalsScored) {
+                    if (t1.team.tempStats.goalsScoredAway === t2.team.tempStats.goalsScoredAway) {
+                        return 0;
+                    } else {
+                        // 13.01.d higher goal scored away
+                        return t2.team.tempStats.goalsScoredAway - t1.team.tempStats.goalsScoredAway;
+                    }
+                } else {
+                    // 13.01.c higher goal scored
+                    return t2.team.tempStats.goalsScored - t1.team.tempStats.goalsScored;
+                }
+            } else {
+                // 13.01.b higher goal difference
+                return t2.team.tempStats.goalDiff - t1.team.tempStats.goalDiff;
+            }
+        } else {
+            // 13.01.a higher point
+            return t2.team.tempStats.points - t1.team.tempStats.points;
+        }
+    });
+
+    var finalArray = [];
+    for (i = 0, len = sortingArray.length; i < len; i++) {
+        if (finalArray.length && JSON.stringify(finalArray[finalArray.length - 1][0].team.tempStats) == JSON.stringify(sortingArray[i].team.tempStats)) {
+            // this team has the same stats as the previous team
+            finalArray[finalArray.length - 1].push(sortingArray[i]);
+        } else {
+            // this team has a smaller points than the previous
+            finalArray.push([sortingArray[i]])
+        }
+    }
+
+    console.log(finalArray);
+
+    return finalArray;
+}
 
 Euro.NUM_GROUPS = 6;
 Euro.NUM_TEAMS_IN_GROUP = 4;
