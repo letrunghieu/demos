@@ -50,12 +50,12 @@
     };
 
     var EURO_GROUPS = [
-        {group: 'A', teams: [0, 0, 0]},
-        {group: 'B', teams: [0, 0, 0]},
-        {group: 'C', teams: [0, 0, 0]},
-        {group: 'D', teams: [0, 0, 0]},
-        {group: 'E', teams: [0, 0, 0]},
-        {group: 'F', teams: [0, 0, 0]},
+        {group: 'A', teams: ['WA', 'RA', '3A']},
+        {group: 'B', teams: ['WB', 'RB', '3B']},
+        {group: 'C', teams: ['WC', 'RC', '3C']},
+        {group: 'D', teams: ['WD', 'RD', '3D']},
+        {group: 'E', teams: ['WE', 'RE', '3E']},
+        {group: 'F', teams: ['WF', 'RF', '3F']},
     ];
 
     var EURO_3RD = [
@@ -117,6 +117,19 @@
                 })
                 .style('fill-opacity', function (d) {
                     return d.fillOpacity;
+                })
+                .on('mouseenter', function (d) {
+                    d3.selectAll('path.match')
+                            .filter(function (m) {
+                                return m.source.teamCode !== d.label && m.target.teamCode !== d.label;
+                            })
+                            .transition()
+                            .attr('fill-opacity', 0.1);
+                })
+                .on('mouseout', function (d) {
+                    d3.selectAll('path.match')
+                            .transition()
+                            .attr('fill-opacity', chordOpacity);
                 });
 
         teams.transition()
@@ -133,6 +146,7 @@
                 .text(function (d) {
                     return d.label
                 })
+                .attr('pointer-events', 'none')
                 .attr('transform', function (d) {
                     var angle = (d.startAngle + d.endAngle) / 2;
                     var r = DIMENSIONS.radius + DIMENSIONS.minTeamThickness / 2
@@ -154,21 +168,20 @@
                 .attr('class', 'match')
                 .attr('d', chord)
                 .attr('fill', '#bbb')
-                .attr('fill-opacity', function (d) {
-                    return (d.source.isCertain && d.target.isCertain) ? 0.8 : 0.4;
-                });
+                .attr('fill-opacity', chordOpacity);
 
         matches.transition()
                 .attr('d', chord)
-                .attr('fill-opacity', function (d) {
-                    return (d.source.isCertain && d.target.isCertain) ? 0.8 : 0.4;
-                });
+                .attr('fill-opacity', chordOpacity);
 
         matches.exit()
                 .transition()
                 .remove();
     }
 
+    function chordOpacity(d) {
+        return (d.source.isCertain && d.target.isCertain) ? 0.8 : 0.4;
+    }
 
     function layoutTeams(groups) {
         var results = [];
@@ -184,7 +197,7 @@
                     endAngle: groupStartAngle + (j + 1) * teamAngle,
                     color: groupColorScale(i),
                     fillOpacity: (j < 2) ? (1 - j * 0.15) : (chosen3rdGroupTeams.has(g.group) ? (1 - j * 0.15) : (chosen3rdGroupTeams.size() < 4) ? 0.4 : 0.1), // the third-placed team
-                    label: (j == 0 ? "W" : (j == 1 ? "R" : "3")) + String.fromCharCode(65 + i)
+                    label: t
                 });
             })
         });
@@ -248,10 +261,12 @@
 
         return {
             source: {
-                teamIndex: t1
+                teamIndex: t1,
+                teamCode: team1
             },
             target: {
                 teamIndex: t2,
+                teamCode: team2
             }
         }
     }
