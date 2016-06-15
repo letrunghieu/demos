@@ -130,6 +130,13 @@
                     d3.selectAll('path.match')
                             .transition()
                             .attr('fill-opacity', chordOpacity);
+                })
+                .append('title')
+                .text(function (d) {
+                    var standing = d.label.charAt(0);
+                    var standingLabel = standing === 'W' ? "The winner of group " : (standing === 'R' ? "The runner-up of group " : "The third-placed team of group");
+
+                    return standingLabel + d.label.charAt(1);
                 });
 
         teams.transition()
@@ -159,7 +166,7 @@
                 .attr('dy', 6);
 
         var matches = g.selectAll('path.match')
-                .data(matchesData, function(d){
+                .data(matchesData, function (d) {
                     return d.source.teamCode + "-" + d.target.teamCode;
                 });
 
@@ -302,6 +309,9 @@
         buttons.enter()
                 .append('a')
                 .attr('class', 'group-button')
+                .style('border-color', function (d, i) {
+                    return groupColorScale(i);
+                })
                 .on('click', function (d) {
                     var group = d.group;
                     if (chosen3rdGroupTeams.has(group)) {
@@ -324,35 +334,33 @@
                 })
                 .enter()
                 .append('span')
-                .style('background', function (d) {
-                    return d.color;
-                })
                 .text(function (d) {
                     return "Group " + d.group + " third-placed team"
                 });
 
-        buttons.style('border-color', function (d, i) {
-            var group = d.group;
-            if (chosen3rdGroupTeams.has(group)) {
-                return groupColorScale(i);
-            } else {
-                return "transparent";
-            }
-        }).style('opacity', function (d) {
+        buttons.style('opacity', function (d) {
             var group = d.group;
             if (chosen3rdGroupTeams.size() >= 4 && !chosen3rdGroupTeams.has(group)) {
                 return 0.5;
             } else {
                 return 1;
             }
-        }).style('margin-left', function(d) {
-            var group = d.group;
-            if (chosen3rdGroupTeams.has(group)) {
-                return "182px";
-            } else {
-                return "0px";
-            }
-        });
+        }).selectAll('span')
+                .data(function (d, i) {
+                    return [{
+                        color: groupColorScale(i),
+                        group: d.group,
+                    }];
+                })
+                .style('background', function (d) {
+                    var group = d.group;
+                    if (chosen3rdGroupTeams.has(group)) {
+                        return d.color;
+                    } else {
+                        return "none";
+                    }
+
+                });
     }
 
     drawChord();

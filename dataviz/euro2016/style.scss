@@ -29,7 +29,7 @@ body {
   transition: all 0.2s linear;
 
   &:hover {
-    border-color: #999;
+    border-radius: 7px;
   }
 
   span {
@@ -38,6 +38,7 @@ body {
     padding: 7px 5px;
     width: 176px;
     text-align: center;
+    transition:  all 0.2s linear;
   }
 }
 
