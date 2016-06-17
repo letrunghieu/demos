@@ -1,0 +1,171 @@
+---
+title: EURO teams
+excerpt: EURO history
+---
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <meta name="description"
+          content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    {% include open-graph.html %}
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"
+          type="text/css"/>
+    <link href='https://fonts.googleapis.com/css?family=Crimson+Text|Lato' rel='stylesheet' type='text/css'>
+    <link href='style.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div id="artwork">
+    <div id="chart"></div>
+    <div id="heading">
+        <h1>EURO 2016 Knockout phase matches</h1>
+        <p class="ref">
+            Source:
+            <a href="http://www.uefa.com/MultimediaFiles/Download/Regulations/uefaorg/Regulations/02/03/92/81/2039281_DOWNLOAD.pdf">
+                Regulations of the UEFA European Football Championship
+            </a>
+        </p>
+        <p class="legend">
+            A, B, C, D, E, F is the name of a group.
+        </p>
+        <p class="legend">
+            "W" stands for group winner, "R" for group runners-up and "3" for third-placed team of each group.
+        </p>
+    </div>
+    <div id="content">
+        <p>
+            The six group winners, six group runners-up and the four best third-placed teams
+            play the round of 16 in single leg knockout matches. All scenarios are visualized
+            in the diagram above. Click buttons on the right column to select up to 4 third-placed teams qualified
+            to advance to the knockout phase. Each match is presented by a chord between two annular sectors.
+        </p>
+        <p>
+            When all qualified teams are not defined (the number of selected buttons is less than 4), there can be more
+            than one chords connected to a sector. Those chords are faded. A chord is highlighted when the mouse is
+            hovered
+            over a sector connected to the chord.
+        </p>
+        {% include hieule.info.html %}
+    </div>
+</div>
+<script>
+    var CONSTANTS = {
+        width: 1000,
+        height: 1000,
+        margins: {
+            top: 10, right: 10, bottom: 10, left: 10
+        },
+        cellWidth: 40,
+        cellHeight: 4
+    };
+
+
+    var svg = d3.select('#chart')
+            .append('svg')
+            .attr('class', 'euro-teams-history')
+            .attr('width', CONSTANTS.width)
+            .attr('height', CONSTANTS.height);
+
+    var g = svg.append('g')
+            .attr('class', 'euro-teams')
+            .attr('width', CONSTANTS.width - CONSTANTS.margins.left - CONSTANTS.margins.right)
+            .attr('width', CONSTANTS.height - CONSTANTS.margins.top - CONSTANTS.margins.bottom)
+            .attr('transform', "translate(" + (CONSTANTS.margins.left) + "," + (CONSTANTS.margins.top) + ")");
+
+    var yearsElement = g.append('g')
+            .classed('chart-years', true);
+
+    var yearsScale, teamsScale;
+
+    d3.json('data.json', function (error, json) {
+        var years = [];
+        var teams = [];
+
+        var i, len, inserted;
+
+        json.forEach(function (r) {
+
+            // Build the teams and the years array
+            inserted = years.findIndex(function (e) {
+                return e.year == r.year;
+            });
+            if (inserted < 0) {
+                years.push({year: +r.year});
+            }
+            inserted = teams.findIndex(function (e) {
+                return e.teamCode == r.teamCode;
+            });
+            if (inserted < 0) {
+                teams.push({team: r.team, teamCode: r.teamCode});
+            }
+        });
+
+        // Sort these arrays
+        years.sort(function (a, b) {
+            return a.year - b.year
+        });
+        teams.sort(function (a, b) {
+            return a.team > b.team ? 1 : (a.team < b.team ? -1 : 0);
+        });
+
+        console.log(years);
+        yearsScale = cellScale(years.map(function (e) {
+            return e.year;
+        }), 0, CONSTANTS.cellWidth);
+
+        drawBoard(teams, years, json);
+    });
+
+    function drawBoard(teams, years, data) {
+        drawYears(years);
+    }
+
+    function drawYears(years) {
+        var selection = yearsElement.selectAll('.year')
+                .data(years, function (d) {
+                    return d.year
+                });
+
+        var gs = selection.enter()
+                .append('g')
+                .attr('class', 'year')
+                .attr('transform', function (d) {
+                    var x = yearsScale(d.year);
+                    var y = 0;
+
+                    return "translate(" + x + "," + y + ")";
+                });
+
+        gs.append('text')
+                .text(function (d) {
+                    return d.year;
+                })
+                .attr('transform', 'rotate(-90) translate(-40, ' + CONSTANTS.cellWidth / 2 + ')');
+
+
+    }
+
+    function cellScale(domain, base, step) {
+
+        var _this = this;
+
+        this.base = base;
+        this.step = step;
+        this.scale = d3.scale.ordinal()
+                .domain(domain)
+                .range(d3.range(0, domain.length));
+
+        function s(x) {
+            return _this.base + _this.scale(x) * _this.step;
+        }
+
+        return s;
+    }
+</script>
+</body>
+</html>
