@@ -21,6 +21,19 @@ excerpt: EURO history
 </head>
 <body>
 <div id="artwork">
+    <div id="heading">
+        <h1>EURO teams history</h1>
+        <p class="ref">
+            Source:
+            <a href="http://www.uefa.com/uefaeuro">
+                UEFA website
+            </a>
+        </p>
+        <p class="legend" id="color-legend">
+
+        </p>
+    </div>
+
     <div>
         <div class="row">
             <div class="col-sm-12">
@@ -32,41 +45,15 @@ excerpt: EURO history
         </div>
     </div>
     <div id="chart"></div>
-    <div id="heading">
-        <h1>EURO 2016 Knockout phase matches</h1>
-        <p class="ref">
-            Source:
-            <a href="http://www.uefa.com/MultimediaFiles/Download/Regulations/uefaorg/Regulations/02/03/92/81/2039281_DOWNLOAD.pdf">
-                Regulations of the UEFA European Football Championship
-            </a>
-        </p>
-        <p class="legend">
-            A, B, C, D, E, F is the name of a group.
-        </p>
-        <p class="legend">
-            "W" stands for group winner, "R" for group runners-up and "3" for third-placed team of each group.
-        </p>
-    </div>
+
     <div id="content">
-        <p>
-            The six group winners, six group runners-up and the four best third-placed teams
-            play the round of 16 in single leg knockout matches. All scenarios are visualized
-            in the diagram above. Click buttons on the right column to select up to 4 third-placed teams qualified
-            to advance to the knockout phase. Each match is presented by a chord between two annular sectors.
-        </p>
-        <p>
-            When all qualified teams are not defined (the number of selected buttons is less than 4), there can be more
-            than one chords connected to a sector. Those chords are faded. A chord is highlighted when the mouse is
-            hovered
-            over a sector connected to the chord.
-        </p>
         {% include hieule.info.html %}
     </div>
 </div>
 <script>
     var CONSTANTS = {
         width: 1300,
-        height: 1000,
+        height: 480,
         margins: {
             top: 10, right: 10, bottom: 10, left: 10
         },
@@ -119,6 +106,25 @@ excerpt: EURO history
 
 
     var yearsScale, teamsScale;
+
+    var colorLegend = d3.select('#color-legend')
+            .selectAll('.color-legend')
+            .data(CONSTANTS.colors.cells);
+
+    var colorLegendSpan = colorLegend.enter()
+            .append('span')
+            .classed('color-legend', true);
+
+    colorLegendSpan.append('span')
+            .classed('color-legend-cell', true)
+            .style('background-color', function (d) {
+                return d.color;
+            });
+    colorLegendSpan.append('span')
+            .classed('color-legend-text', true)
+            .text(function (d) {
+                return d.label
+            });
 
     d3.json('data.json', function (error, json) {
         var years = [];
@@ -194,7 +200,7 @@ excerpt: EURO history
 
     function drawCells(data) {
         var selection = cellElement.selectAll('.cell')
-                .data(data, function(d) {
+                .data(data, function (d) {
                     return d.teamCode + "-" + d.year;
                 });
 

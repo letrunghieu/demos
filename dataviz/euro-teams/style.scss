@@ -19,33 +19,28 @@ body {
     font-size: 20px;
   }
 }
-.group-buttons {
-  display: inline-block;
-  vertical-align: top;
-  width: 380px;
-  text-align: center;
+
+#color-legend {
+  margin-bottom: 1em;
+}
+.color-legend {
+  white-space: nowrap;
+  line-height: 20px;
+  margin: 0 10px;
 }
 
-.group-button {
+.color-legend-cell {
   display: inline-block;
-  margin: 5px;
-  padding: 5px;
-  border: 2px solid transparent;
-  cursor: pointer;
-  transition: all 0.2s linear;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  vertical-align: middle;
+  margin: 0 2px;
+}
 
-  &:hover {
-    border-radius: 7px;
-  }
-
-  span {
-    color: black;
-    display: inline-block;
-    padding: 7px 5px;
-    width: 176px;
-    text-align: center;
-    transition:  all 0.2s linear;
-  }
+.color-legend-text {
+  vertical-align: middle;
+  line-height: 20px;
 }
 
 .legend {
