@@ -3,8 +3,8 @@
     "year": 1960,
     "team": "USSR",
     "teamCode": "URS",
-    "round": "Final",
-    "roundIndex": 1
+    "round": "Champion",
+    "roundIndex": 0
   },
   {
     "year": 1960,
@@ -116,14 +116,14 @@
     "team": "Republic of Ireland",
     "teamCode": "IRL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1964,
     "team": "Spain",
     "teamCode": "ESP",
-    "round": "Final",
-    "roundIndex": 1
+    "round": "Champion",
+    "roundIndex": 0
   },
   {
     "year": 1964,
@@ -235,98 +235,98 @@
     "team": "Belgium",
     "teamCode": "BEL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1964,
     "team": "Czechoslovakia",
     "teamCode": "TCH",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1964,
     "team": "England",
     "teamCode": "ENG",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1964,
     "team": "Greece",
     "teamCode": "GRE",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1964,
     "team": "Iceland",
     "teamCode": "ISL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1964,
     "team": "Malta",
     "teamCode": "MLT",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1964,
     "team": "Norway",
     "teamCode": "NOR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1964,
     "team": "Poland",
     "teamCode": "POL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1964,
     "team": "Portugal",
     "teamCode": "POR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1964,
     "team": "Romania",
     "teamCode": "ROU",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1964,
     "team": "Switzerland",
     "teamCode": "SUI",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1964,
     "team": "Turkey",
     "teamCode": "TUR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1964,
     "team": "Wales",
     "teamCode": "WAL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1968,
     "team": "Italy",
     "teamCode": "ITA",
-    "round": "Final",
-    "roundIndex": 1
+    "round": "Champion",
+    "roundIndex": 0
   },
   {
     "year": 1968,
@@ -382,173 +382,173 @@
     "team": "Albania",
     "teamCode": "ALB",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1968,
     "team": "Austria",
     "teamCode": "AUT",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1968,
     "team": "Belgium",
     "teamCode": "BEL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1968,
     "team": "Cyprus",
     "teamCode": "CYP",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1968,
     "team": "Czechoslovakia",
     "teamCode": "TCH",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1968,
     "team": "Denmark",
     "teamCode": "DEN",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1968,
     "team": "Finland",
     "teamCode": "FIN",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1968,
     "team": "German Dem. Rep.",
     "teamCode": "GDR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1968,
     "team": "Greece",
     "teamCode": "GRE",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1968,
     "team": "Luxembourg",
     "teamCode": "LUX",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1968,
     "team": "Netherlands",
     "teamCode": "NED",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1968,
     "team": "Northern Ireland",
     "teamCode": "NIR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1968,
     "team": "Norway",
     "teamCode": "NOR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1968,
     "team": "Poland",
     "teamCode": "POL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1968,
     "team": "Portugal",
     "teamCode": "POR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1968,
     "team": "Republic of Ireland",
     "teamCode": "IRL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1968,
     "team": "Romania",
     "teamCode": "ROU",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1968,
     "team": "Scotland",
     "teamCode": "SCO",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1968,
     "team": "Sweden",
     "teamCode": "SWE",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1968,
     "team": "Switzerland",
     "teamCode": "SUI",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1968,
     "team": "Turkey",
     "teamCode": "TUR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1968,
     "team": "Wales",
     "teamCode": "WAL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1968,
     "team": "West Germany",
     "teamCode": "FRG",
     "round": "Preliminary round",
-    "roundIndex": 9
-  },
-  {
-    "year": 1972,
-    "team": "USSR",
-    "teamCode": "URS",
-    "round": "Final",
-    "roundIndex": 1
+    "roundIndex": 10
   },
   {
     "year": 1972,
     "team": "West Germany",
     "teamCode": "FRG",
+    "round": "Champion",
+    "roundIndex": 0
+  },
+  {
+    "year": 1972,
+    "team": "USSR",
+    "teamCode": "URS",
     "round": "Final",
     "roundIndex": 1
   },
@@ -599,175 +599,175 @@
     "team": "Albania",
     "teamCode": "ALB",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1972,
     "team": "Austria",
     "teamCode": "AUT",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1972,
     "team": "Bulgaria",
     "teamCode": "BUL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1972,
     "team": "Cyprus",
     "teamCode": "CYP",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1972,
     "team": "Czechoslovakia",
     "teamCode": "TCH",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1972,
     "team": "Denmark",
     "teamCode": "DEN",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1972,
     "team": "Finland",
     "teamCode": "FIN",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1972,
     "team": "France",
     "teamCode": "FRA",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1972,
     "team": "German Dem. Rep.",
     "teamCode": "GDR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1972,
     "team": "Greece",
     "teamCode": "GRE",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1972,
     "team": "Luxembourg",
     "teamCode": "LUX",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1972,
     "team": "Malta",
     "teamCode": "MLT",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1972,
     "team": "Netherlands",
     "teamCode": "NED",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1972,
     "team": "Northern Ireland",
     "teamCode": "NIR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1972,
     "team": "Norway",
     "teamCode": "NOR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1972,
     "team": "Poland",
     "teamCode": "POL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1972,
     "team": "Portugal",
     "teamCode": "POR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1972,
     "team": "Republic of Ireland",
     "teamCode": "IRL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1972,
     "team": "Scotland",
     "teamCode": "SCO",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1972,
     "team": "Spain",
     "teamCode": "ESP",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1972,
     "team": "Sweden",
     "teamCode": "SWE",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1972,
     "team": "Switzerland",
     "teamCode": "SUI",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1972,
     "team": "Turkey",
     "teamCode": "TUR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1972,
     "team": "Wales",
     "teamCode": "WAL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1976,
     "team": "Czechoslovakia",
     "teamCode": "TCH",
-    "round": "Final",
-    "roundIndex": 1
+    "round": "Champion",
+    "roundIndex": 0
   },
   {
     "year": 1976,
@@ -823,180 +823,180 @@
     "team": "Austria",
     "teamCode": "AUT",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1976,
     "team": "Bulgaria",
     "teamCode": "BUL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1976,
     "team": "Cyprus",
     "teamCode": "CYP",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1976,
     "team": "Denmark",
     "teamCode": "DEN",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1976,
     "team": "England",
     "teamCode": "ENG",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1976,
     "team": "Finland",
     "teamCode": "FIN",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1976,
     "team": "France",
     "teamCode": "FRA",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1976,
     "team": "German Dem. Rep.",
     "teamCode": "GDR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1976,
     "team": "Greece",
     "teamCode": "GRE",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1976,
     "team": "Hungary",
     "teamCode": "HUN",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1976,
     "team": "Iceland",
     "teamCode": "ISL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1976,
     "team": "Italy",
     "teamCode": "ITA",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1976,
     "team": "Luxembourg",
     "teamCode": "LUX",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1976,
     "team": "Malta",
     "teamCode": "MLT",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1976,
     "team": "Northern Ireland",
     "teamCode": "NIR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1976,
     "team": "Norway",
     "teamCode": "NOR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1976,
     "team": "Poland",
     "teamCode": "POL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1976,
     "team": "Portugal",
     "teamCode": "POR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1976,
     "team": "Republic of Ireland",
     "teamCode": "IRL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1976,
     "team": "Romania",
     "teamCode": "ROU",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1976,
     "team": "Scotland",
     "teamCode": "SCO",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1976,
     "team": "Sweden",
     "teamCode": "SWE",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1976,
     "team": "Switzerland",
     "teamCode": "SUI",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1976,
     "team": "Turkey",
     "teamCode": "TUR",
     "round": "Preliminary round",
-    "roundIndex": 9
-  },
-  {
-    "year": 1980,
-    "team": "Belgium",
-    "teamCode": "BEL",
-    "round": "Final",
-    "roundIndex": 1
+    "roundIndex": 10
   },
   {
     "year": 1980,
     "team": "West Germany",
     "teamCode": "FRG",
+    "round": "Champion",
+    "roundIndex": 0
+  },
+  {
+    "year": 1980,
+    "team": "Belgium",
+    "teamCode": "BEL",
     "round": "Final",
     "roundIndex": 1
   },
@@ -1019,203 +1019,203 @@
     "team": "England",
     "teamCode": "ENG",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 1980,
     "team": "Greece",
     "teamCode": "GRE",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 1980,
     "team": "Netherlands",
     "teamCode": "NED",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 1980,
     "team": "Spain",
     "teamCode": "ESP",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 1980,
     "team": "Austria",
     "teamCode": "AUT",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1980,
     "team": "Bulgaria",
     "teamCode": "BUL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1980,
     "team": "Cyprus",
     "teamCode": "CYP",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1980,
     "team": "Denmark",
     "teamCode": "DEN",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1980,
     "team": "Finland",
     "teamCode": "FIN",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1980,
     "team": "France",
     "teamCode": "FRA",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1980,
     "team": "German Dem. Rep.",
     "teamCode": "GDR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1980,
     "team": "Hungary",
     "teamCode": "HUN",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1980,
     "team": "Iceland",
     "teamCode": "ISL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1980,
     "team": "Luxembourg",
     "teamCode": "LUX",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1980,
     "team": "Malta",
     "teamCode": "MLT",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1980,
     "team": "Northern Ireland",
     "teamCode": "NIR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1980,
     "team": "Norway",
     "teamCode": "NOR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1980,
     "team": "Poland",
     "teamCode": "POL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1980,
     "team": "Portugal",
     "teamCode": "POR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1980,
     "team": "Republic of Ireland",
     "teamCode": "IRL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1980,
     "team": "Romania",
     "teamCode": "ROU",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1980,
     "team": "Scotland",
     "teamCode": "SCO",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1980,
     "team": "Sweden",
     "teamCode": "SWE",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1980,
     "team": "Switzerland",
     "teamCode": "SUI",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1980,
     "team": "Turkey",
     "teamCode": "TUR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1980,
     "team": "USSR",
     "teamCode": "URS",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1980,
     "team": "Wales",
     "teamCode": "WAL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1980,
     "team": "Yugoslavia",
     "teamCode": "YUG",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1984,
     "team": "France",
     "teamCode": "FRA",
-    "round": "Final",
-    "roundIndex": 1
+    "round": "Champion",
+    "roundIndex": 0
   },
   {
     "year": 1984,
@@ -1243,210 +1243,210 @@
     "team": "Belgium",
     "teamCode": "BEL",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 1984,
     "team": "Romania",
     "teamCode": "ROU",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 1984,
     "team": "West Germany",
     "teamCode": "FRG",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 1984,
     "team": "Yugoslavia",
     "teamCode": "YUG",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 1984,
     "team": "Albania",
     "teamCode": "ALB",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1984,
     "team": "Austria",
     "teamCode": "AUT",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1984,
     "team": "Bulgaria",
     "teamCode": "BUL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1984,
     "team": "Cyprus",
     "teamCode": "CYP",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1984,
     "team": "Czechoslovakia",
     "teamCode": "TCH",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1984,
     "team": "England",
     "teamCode": "ENG",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1984,
     "team": "Finland",
     "teamCode": "FIN",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1984,
     "team": "German Dem. Rep.",
     "teamCode": "GDR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1984,
     "team": "Greece",
     "teamCode": "GRE",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1984,
     "team": "Hungary",
     "teamCode": "HUN",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1984,
     "team": "Iceland",
     "teamCode": "ISL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1984,
     "team": "Italy",
     "teamCode": "ITA",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1984,
     "team": "Luxembourg",
     "teamCode": "LUX",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1984,
     "team": "Malta",
     "teamCode": "MLT",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1984,
     "team": "Netherlands",
     "teamCode": "NED",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1984,
     "team": "Northern Ireland",
     "teamCode": "NIR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1984,
     "team": "Norway",
     "teamCode": "NOR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1984,
     "team": "Poland",
     "teamCode": "POL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1984,
     "team": "Republic of Ireland",
     "teamCode": "IRL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1984,
     "team": "Scotland",
     "teamCode": "SCO",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1984,
     "team": "Sweden",
     "teamCode": "SWE",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1984,
     "team": "Switzerland",
     "teamCode": "SUI",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1984,
     "team": "Turkey",
     "teamCode": "TUR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1984,
     "team": "USSR",
     "teamCode": "URS",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1984,
     "team": "Wales",
     "teamCode": "WAL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1988,
     "team": "Netherlands",
     "teamCode": "NED",
-    "round": "Final",
-    "roundIndex": 1
+    "round": "Champion",
+    "roundIndex": 0
   },
   {
     "year": 1988,
@@ -1474,210 +1474,210 @@
     "team": "Denmark",
     "teamCode": "DEN",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 1988,
     "team": "England",
     "teamCode": "ENG",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 1988,
     "team": "Republic of Ireland",
     "teamCode": "IRL",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 1988,
     "team": "Spain",
     "teamCode": "ESP",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 1988,
     "team": "Albania",
     "teamCode": "ALB",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1988,
     "team": "Austria",
     "teamCode": "AUT",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1988,
     "team": "Belgium",
     "teamCode": "BEL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1988,
     "team": "Bulgaria",
     "teamCode": "BUL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1988,
     "team": "Cyprus",
     "teamCode": "CYP",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1988,
     "team": "Czechoslovakia",
     "teamCode": "TCH",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1988,
     "team": "Finland",
     "teamCode": "FIN",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1988,
     "team": "France",
     "teamCode": "FRA",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1988,
     "team": "German Dem. Rep.",
     "teamCode": "GDR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1988,
     "team": "Greece",
     "teamCode": "GRE",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1988,
     "team": "Hungary",
     "teamCode": "HUN",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1988,
     "team": "Iceland",
     "teamCode": "ISL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1988,
     "team": "Luxembourg",
     "teamCode": "LUX",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1988,
     "team": "Malta",
     "teamCode": "MLT",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1988,
     "team": "Northern Ireland",
     "teamCode": "NIR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1988,
     "team": "Norway",
     "teamCode": "NOR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1988,
     "team": "Poland",
     "teamCode": "POL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1988,
     "team": "Portugal",
     "teamCode": "POR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1988,
     "team": "Romania",
     "teamCode": "ROU",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1988,
     "team": "Scotland",
     "teamCode": "SCO",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1988,
     "team": "Sweden",
     "teamCode": "SWE",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1988,
     "team": "Switzerland",
     "teamCode": "SUI",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1988,
     "team": "Turkey",
     "teamCode": "TUR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1988,
     "team": "Wales",
     "teamCode": "WAL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1988,
     "team": "Yugoslavia",
     "teamCode": "YUG",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1992,
     "team": "Denmark",
     "teamCode": "DEN",
-    "round": "Final",
-    "roundIndex": 1
+    "round": "Champion",
+    "roundIndex": 0
   },
   {
     "year": 1992,
@@ -1705,222 +1705,222 @@
     "team": "Commonwealth of Independent States",
     "teamCode": "URS",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 1992,
     "team": "England",
     "teamCode": "ENG",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 1992,
     "team": "France",
     "teamCode": "FRA",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 1992,
     "team": "Scotland",
     "teamCode": "SCO",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 1992,
     "team": "Albania",
     "teamCode": "ALB",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1992,
     "team": "Austria",
     "teamCode": "AUT",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1992,
     "team": "Belgium",
     "teamCode": "BEL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1992,
     "team": "Bulgaria",
     "teamCode": "BUL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1992,
     "team": "Cyprus",
     "teamCode": "CYP",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1992,
     "team": "Czechoslovakia",
     "teamCode": "TCH",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1992,
     "team": "Faroe Islands",
     "teamCode": "FRO",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1992,
     "team": "Finland",
     "teamCode": "FIN",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1992,
     "team": "Greece",
     "teamCode": "GRE",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1992,
     "team": "Hungary",
     "teamCode": "HUN",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1992,
     "team": "Iceland",
     "teamCode": "ISL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1992,
     "team": "Italy",
     "teamCode": "ITA",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1992,
     "team": "Luxembourg",
     "teamCode": "LUX",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1992,
     "team": "Malta",
     "teamCode": "MLT",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1992,
     "team": "Northern Ireland",
     "teamCode": "NIR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1992,
     "team": "Norway",
     "teamCode": "NOR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1992,
     "team": "Poland",
     "teamCode": "POL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1992,
     "team": "Portugal",
     "teamCode": "POR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1992,
     "team": "Republic of Ireland",
     "teamCode": "IRL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1992,
     "team": "Romania",
     "teamCode": "ROU",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1992,
     "team": "San Marino",
     "teamCode": "SMR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1992,
     "team": "Spain",
     "teamCode": "ESP",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1992,
     "team": "Switzerland",
     "teamCode": "SUI",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1992,
     "team": "Turkey",
     "teamCode": "TUR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1992,
     "team": "Wales",
     "teamCode": "WAL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1992,
     "team": "Yugoslavia",
     "teamCode": "YUG",
     "round": "Preliminary round",
-    "roundIndex": 9
-  },
-  {
-    "year": 1996,
-    "team": "Czech Republic",
-    "teamCode": "CZE",
-    "round": "Final",
-    "roundIndex": 1
+    "roundIndex": 10
   },
   {
     "year": 1996,
     "team": "Germany",
     "teamCode": "GER",
+    "round": "Champion",
+    "roundIndex": 0
+  },
+  {
+    "year": 1996,
+    "team": "Czech Republic",
+    "teamCode": "CZE",
     "round": "Final",
     "roundIndex": 1
   },
@@ -1971,287 +1971,287 @@
     "team": "Bulgaria",
     "teamCode": "BUL",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 1996,
     "team": "Denmark",
     "teamCode": "DEN",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 1996,
     "team": "Italy",
     "teamCode": "ITA",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 1996,
     "team": "Romania",
     "teamCode": "ROU",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 1996,
     "team": "Russia",
     "teamCode": "RUS",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 1996,
     "team": "Scotland",
     "teamCode": "SCO",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 1996,
     "team": "Switzerland",
     "teamCode": "SUI",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 1996,
     "team": "Turkey",
     "teamCode": "TUR",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 1996,
     "team": "Republic of Ireland",
     "teamCode": "IRL",
     "round": "Play-offs",
-    "roundIndex": 7
+    "roundIndex": 8
   },
   {
     "year": 1996,
     "team": "Albania",
     "teamCode": "ALB",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1996,
     "team": "Armenia",
     "teamCode": "ARM",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1996,
     "team": "Austria",
     "teamCode": "AUT",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1996,
     "team": "Azerbaijan",
     "teamCode": "AZE",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1996,
     "team": "Belarus",
     "teamCode": "BLR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1996,
     "team": "Belgium",
     "teamCode": "BEL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1996,
     "team": "Cyprus",
     "teamCode": "CYP",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1996,
     "team": "Estonia",
     "teamCode": "EST",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1996,
     "team": "Faroe Islands",
     "teamCode": "FRO",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1996,
     "team": "Finland",
     "teamCode": "FIN",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1996,
     "team": "FYR Macedonia",
     "teamCode": "MKD",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1996,
     "team": "Georgia",
     "teamCode": "GEO",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1996,
     "team": "Greece",
     "teamCode": "GRE",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1996,
     "team": "Hungary",
     "teamCode": "HUN",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1996,
     "team": "Iceland",
     "teamCode": "ISL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1996,
     "team": "Israel",
     "teamCode": "ISR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1996,
     "team": "Latvia",
     "teamCode": "LVA",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1996,
     "team": "Liechtenstein",
     "teamCode": "LIE",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1996,
     "team": "Lithuania",
     "teamCode": "LTU",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1996,
     "team": "Luxembourg",
     "teamCode": "LUX",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1996,
     "team": "Malta",
     "teamCode": "MLT",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1996,
     "team": "Moldova",
     "teamCode": "MDA",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1996,
     "team": "Northern Ireland",
     "teamCode": "NIR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1996,
     "team": "Norway",
     "teamCode": "NOR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1996,
     "team": "Poland",
     "teamCode": "POL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1996,
     "team": "San Marino",
     "teamCode": "SMR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1996,
     "team": "Slovakia",
     "teamCode": "SVK",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1996,
     "team": "Slovenia",
     "teamCode": "SVN",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1996,
     "team": "Sweden",
     "teamCode": "SWE",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1996,
     "team": "Ukraine",
     "teamCode": "UKR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 1996,
     "team": "Wales",
     "teamCode": "WAL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 2000,
     "team": "France",
     "teamCode": "FRA",
-    "round": "Final",
-    "roundIndex": 1
+    "round": "Champion",
+    "roundIndex": 0
   },
   {
     "year": 2000,
@@ -2307,308 +2307,308 @@
     "team": "Belgium",
     "teamCode": "BEL",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 2000,
     "team": "Czech Republic",
     "teamCode": "CZE",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 2000,
     "team": "Denmark",
     "teamCode": "DEN",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 2000,
     "team": "England",
     "teamCode": "ENG",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 2000,
     "team": "Germany",
     "teamCode": "GER",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 2000,
     "team": "Norway",
     "teamCode": "NOR",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 2000,
     "team": "Slovenia",
     "teamCode": "SVN",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 2000,
     "team": "Sweden",
     "teamCode": "SWE",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 2000,
     "team": "Israel",
     "teamCode": "ISR",
     "round": "Play-off for Final Tournament",
-    "roundIndex": 6
+    "roundIndex": 7
   },
   {
     "year": 2000,
     "team": "Republic of Ireland",
     "teamCode": "IRL",
     "round": "Play-off for Final Tournament",
-    "roundIndex": 6
+    "roundIndex": 7
   },
   {
     "year": 2000,
     "team": "Scotland",
     "teamCode": "SCO",
     "round": "Play-off for Final Tournament",
-    "roundIndex": 6
+    "roundIndex": 7
   },
   {
     "year": 2000,
     "team": "Ukraine",
     "teamCode": "UKR",
     "round": "Play-off for Final Tournament",
-    "roundIndex": 6
+    "roundIndex": 7
   },
   {
     "year": 2000,
     "team": "Albania",
     "teamCode": "ALB",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 2000,
     "team": "Andorra",
     "teamCode": "AND",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 2000,
     "team": "Armenia",
     "teamCode": "ARM",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 2000,
     "team": "Austria",
     "teamCode": "AUT",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 2000,
     "team": "Azerbaijan",
     "teamCode": "AZE",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 2000,
     "team": "Belarus",
     "teamCode": "BLR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 2000,
     "team": "Bosnia and Herzegovina",
     "teamCode": "BIH",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 2000,
     "team": "Bulgaria",
     "teamCode": "BUL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 2000,
     "team": "Croatia",
     "teamCode": "CRO",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 2000,
     "team": "Cyprus",
     "teamCode": "CYP",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 2000,
     "team": "Estonia",
     "teamCode": "EST",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 2000,
     "team": "Faroe Islands",
     "teamCode": "FRO",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 2000,
     "team": "Finland",
     "teamCode": "FIN",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 2000,
     "team": "FYR Macedonia",
     "teamCode": "MKD",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 2000,
     "team": "Georgia",
     "teamCode": "GEO",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 2000,
     "team": "Greece",
     "teamCode": "GRE",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 2000,
     "team": "Hungary",
     "teamCode": "HUN",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 2000,
     "team": "Iceland",
     "teamCode": "ISL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 2000,
     "team": "Latvia",
     "teamCode": "LVA",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 2000,
     "team": "Liechtenstein",
     "teamCode": "LIE",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 2000,
     "team": "Lithuania",
     "teamCode": "LTU",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 2000,
     "team": "Luxembourg",
     "teamCode": "LUX",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 2000,
     "team": "Malta",
     "teamCode": "MLT",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 2000,
     "team": "Moldova",
     "teamCode": "MDA",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 2000,
     "team": "Northern Ireland",
     "teamCode": "NIR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 2000,
     "team": "Poland",
     "teamCode": "POL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 2000,
     "team": "Russia",
     "teamCode": "RUS",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 2000,
     "team": "San Marino",
     "teamCode": "SMR",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 2000,
     "team": "Slovakia",
     "teamCode": "SVK",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 2000,
     "team": "Switzerland",
     "teamCode": "SUI",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 2000,
     "team": "Wales",
     "teamCode": "WAL",
     "round": "Preliminary round",
-    "roundIndex": 9
+    "roundIndex": 10
   },
   {
     "year": 2004,
     "team": "Greece",
     "teamCode": "GRE",
-    "round": "Final",
-    "roundIndex": 1
+    "round": "Champion",
+    "roundIndex": 0
   },
   {
     "year": 2004,
@@ -2664,313 +2664,313 @@
     "team": "Bulgaria",
     "teamCode": "BUL",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 2004,
     "team": "Croatia",
     "teamCode": "CRO",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 2004,
     "team": "Germany",
     "teamCode": "GER",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 2004,
     "team": "Italy",
     "teamCode": "ITA",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 2004,
     "team": "Latvia",
     "teamCode": "LVA",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 2004,
     "team": "Russia",
     "teamCode": "RUS",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 2004,
     "team": "Spain",
     "teamCode": "ESP",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 2004,
     "team": "Switzerland",
     "teamCode": "SUI",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 2004,
     "team": "Norway",
     "teamCode": "NOR",
     "round": "Play-off for Final Tournament",
-    "roundIndex": 6
+    "roundIndex": 7
   },
   {
     "year": 2004,
     "team": "Scotland",
     "teamCode": "SCO",
     "round": "Play-off for Final Tournament",
-    "roundIndex": 6
+    "roundIndex": 7
   },
   {
     "year": 2004,
     "team": "Slovenia",
     "teamCode": "SVN",
     "round": "Play-off for Final Tournament",
-    "roundIndex": 6
+    "roundIndex": 7
   },
   {
     "year": 2004,
     "team": "Turkey",
     "teamCode": "TUR",
     "round": "Play-off for Final Tournament",
-    "roundIndex": 6
+    "roundIndex": 7
   },
   {
     "year": 2004,
     "team": "Wales",
     "teamCode": "WAL",
     "round": "Play-off for Final Tournament",
-    "roundIndex": 6
+    "roundIndex": 7
   },
   {
     "year": 2004,
     "team": "Albania",
     "teamCode": "ALB",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2004,
     "team": "Andorra",
     "teamCode": "AND",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2004,
     "team": "Armenia",
     "teamCode": "ARM",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2004,
     "team": "Austria",
     "teamCode": "AUT",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2004,
     "team": "Azerbaijan",
     "teamCode": "AZE",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2004,
     "team": "Belarus",
     "teamCode": "BLR",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2004,
     "team": "Belgium",
     "teamCode": "BEL",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2004,
     "team": "Bosnia and Herzegovina",
     "teamCode": "BIH",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2004,
     "team": "Cyprus",
     "teamCode": "CYP",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2004,
     "team": "Estonia",
     "teamCode": "EST",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2004,
     "team": "Faroe Islands",
     "teamCode": "FRO",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2004,
     "team": "Finland",
     "teamCode": "FIN",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2004,
     "team": "FYR Macedonia",
     "teamCode": "MKD",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2004,
     "team": "Georgia",
     "teamCode": "GEO",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2004,
     "team": "Hungary",
     "teamCode": "HUN",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2004,
     "team": "Iceland",
     "teamCode": "ISL",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2004,
     "team": "Israel",
     "teamCode": "ISR",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2004,
     "team": "Liechtenstein",
     "teamCode": "LIE",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2004,
     "team": "Lithuania",
     "teamCode": "LTU",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2004,
     "team": "Luxembourg",
     "teamCode": "LUX",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2004,
     "team": "Malta",
     "teamCode": "MLT",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2004,
     "team": "Moldova",
     "teamCode": "MDA",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2004,
     "team": "Northern Ireland",
     "teamCode": "NIR",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2004,
     "team": "Poland",
     "teamCode": "POL",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2004,
     "team": "Republic of Ireland",
     "teamCode": "IRL",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2004,
     "team": "Romania",
     "teamCode": "ROU",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2004,
     "team": "San Marino",
     "teamCode": "SMR",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2004,
     "team": "Serbia and Montenegro",
     "teamCode": "SMN",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2004,
     "team": "Slovakia",
     "teamCode": "SVK",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2004,
     "team": "Ukraine",
     "teamCode": "UKR",
     "round": "Qualifying round",
-    "roundIndex": 8
-  },
-  {
-    "year": 2008,
-    "team": "Germany",
-    "teamCode": "GER",
-    "round": "Final",
-    "roundIndex": 1
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "Spain",
     "teamCode": "ESP",
+    "round": "Champion",
+    "roundIndex": 0
+  },
+  {
+    "year": 2008,
+    "team": "Germany",
+    "teamCode": "GER",
     "round": "Final",
     "roundIndex": 1
   },
@@ -3021,320 +3021,320 @@
     "team": "Austria",
     "teamCode": "AUT",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 2008,
     "team": "Czech Republic",
     "teamCode": "CZE",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 2008,
     "team": "France",
     "teamCode": "FRA",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 2008,
     "team": "Greece",
     "teamCode": "GRE",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 2008,
     "team": "Poland",
     "teamCode": "POL",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 2008,
     "team": "Romania",
     "teamCode": "ROU",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 2008,
     "team": "Sweden",
     "teamCode": "SWE",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 2008,
     "team": "Switzerland",
     "teamCode": "SUI",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 2008,
     "team": "Albania",
     "teamCode": "ALB",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "Andorra",
     "teamCode": "AND",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "Armenia",
     "teamCode": "ARM",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "Azerbaijan",
     "teamCode": "AZE",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "Belarus",
     "teamCode": "BLR",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "Belgium",
     "teamCode": "BEL",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "Bosnia and Herzegovina",
     "teamCode": "BIH",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "Bulgaria",
     "teamCode": "BUL",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "Cyprus",
     "teamCode": "CYP",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "Denmark",
     "teamCode": "DEN",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "England",
     "teamCode": "ENG",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "Estonia",
     "teamCode": "EST",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "Faroe Islands",
     "teamCode": "FRO",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "Finland",
     "teamCode": "FIN",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "FYR Macedonia",
     "teamCode": "MKD",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "Georgia",
     "teamCode": "GEO",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "Hungary",
     "teamCode": "HUN",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "Iceland",
     "teamCode": "ISL",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "Israel",
     "teamCode": "ISR",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "Kazakhstan",
     "teamCode": "KAZ",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "Latvia",
     "teamCode": "LVA",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "Liechtenstein",
     "teamCode": "LIE",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "Lithuania",
     "teamCode": "LTU",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "Luxembourg",
     "teamCode": "LUX",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "Malta",
     "teamCode": "MLT",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "Moldova",
     "teamCode": "MDA",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "Northern Ireland",
     "teamCode": "NIR",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "Norway",
     "teamCode": "NOR",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "Republic of Ireland",
     "teamCode": "IRL",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "San Marino",
     "teamCode": "SMR",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "Scotland",
     "teamCode": "SCO",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "Serbia",
     "teamCode": "SRB",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "Slovakia",
     "teamCode": "SVK",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "Slovenia",
     "teamCode": "SVN",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "Ukraine",
     "teamCode": "UKR",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2008,
     "team": "Wales",
     "teamCode": "WAL",
     "round": "Qualifying round",
-    "roundIndex": 8
-  },
-  {
-    "year": 2012,
-    "team": "Italy",
-    "teamCode": "ITA",
-    "round": "Final",
-    "roundIndex": 1
+    "roundIndex": 9
   },
   {
     "year": 2012,
     "team": "Spain",
     "teamCode": "ESP",
+    "round": "Champion",
+    "roundIndex": 0
+  },
+  {
+    "year": 2012,
+    "team": "Italy",
+    "teamCode": "ITA",
     "round": "Final",
     "roundIndex": 1
   },
@@ -3385,314 +3385,314 @@
     "team": "Croatia",
     "teamCode": "CRO",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 2012,
     "team": "Denmark",
     "teamCode": "DEN",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 2012,
     "team": "Netherlands",
     "teamCode": "NED",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 2012,
     "team": "Poland",
     "teamCode": "POL",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 2012,
     "team": "Republic of Ireland",
     "teamCode": "IRL",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 2012,
     "team": "Russia",
     "teamCode": "RUS",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 2012,
     "team": "Sweden",
     "teamCode": "SWE",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 2012,
     "team": "Ukraine",
     "teamCode": "UKR",
     "round": "Final tournament - Group stage",
-    "roundIndex": 5
+    "roundIndex": 6
   },
   {
     "year": 2012,
     "team": "Bosnia and Herzegovina",
     "teamCode": "BIH",
     "round": "Play-off for Final Tournament",
-    "roundIndex": 6
+    "roundIndex": 7
   },
   {
     "year": 2012,
     "team": "Estonia",
     "teamCode": "EST",
     "round": "Play-off for Final Tournament",
-    "roundIndex": 6
+    "roundIndex": 7
   },
   {
     "year": 2012,
     "team": "Montenegro",
     "teamCode": "MNE",
     "round": "Play-off for Final Tournament",
-    "roundIndex": 6
+    "roundIndex": 7
   },
   {
     "year": 2012,
     "team": "Turkey",
     "teamCode": "TUR",
     "round": "Play-off for Final Tournament",
-    "roundIndex": 6
+    "roundIndex": 7
   },
   {
     "year": 2012,
     "team": "Albania",
     "teamCode": "ALB",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2012,
     "team": "Andorra",
     "teamCode": "AND",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2012,
     "team": "Armenia",
     "teamCode": "ARM",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2012,
     "team": "Austria",
     "teamCode": "AUT",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2012,
     "team": "Azerbaijan",
     "teamCode": "AZE",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2012,
     "team": "Belarus",
     "teamCode": "BLR",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2012,
     "team": "Belgium",
     "teamCode": "BEL",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2012,
     "team": "Bulgaria",
     "teamCode": "BUL",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2012,
     "team": "Cyprus",
     "teamCode": "CYP",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2012,
     "team": "Faroe Islands",
     "teamCode": "FRO",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2012,
     "team": "Finland",
     "teamCode": "FIN",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2012,
     "team": "FYR Macedonia",
     "teamCode": "MKD",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2012,
     "team": "Georgia",
     "teamCode": "GEO",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2012,
     "team": "Hungary",
     "teamCode": "HUN",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2012,
     "team": "Iceland",
     "teamCode": "ISL",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2012,
     "team": "Israel",
     "teamCode": "ISR",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2012,
     "team": "Kazakhstan",
     "teamCode": "KAZ",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2012,
     "team": "Latvia",
     "teamCode": "LVA",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2012,
     "team": "Liechtenstein",
     "teamCode": "LIE",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2012,
     "team": "Lithuania",
     "teamCode": "LTU",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2012,
     "team": "Luxembourg",
     "teamCode": "LUX",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2012,
     "team": "Malta",
     "teamCode": "MLT",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2012,
     "team": "Moldova",
     "teamCode": "MDA",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2012,
     "team": "Northern Ireland",
     "teamCode": "NIR",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2012,
     "team": "Norway",
     "teamCode": "NOR",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2012,
     "team": "Romania",
     "teamCode": "ROU",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2012,
     "team": "San Marino",
     "teamCode": "SMR",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2012,
     "team": "Scotland",
     "teamCode": "SCO",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2012,
     "team": "Serbia",
     "teamCode": "SRB",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2012,
     "team": "Slovakia",
     "teamCode": "SVK",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2012,
     "team": "Slovenia",
     "teamCode": "SVN",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2012,
     "team": "Switzerland",
     "teamCode": "SUI",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   },
   {
     "year": 2012,
     "team": "Wales",
     "teamCode": "WAL",
     "round": "Qualifying round",
-    "roundIndex": 8
+    "roundIndex": 9
   }
 ]

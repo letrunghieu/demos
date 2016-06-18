@@ -21,6 +21,16 @@ excerpt: EURO history
 </head>
 <body>
 <div id="artwork">
+    <div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="text-center">
+                    <input type="radio" id="sort-alphabet" value="alphabet" name="short" checked/> Sort by team name
+                    <input type="radio" id="sort-first-year" value="first-year" name="short"/> Sort by first attendance
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="chart"></div>
     <div id="heading">
         <h1>EURO 2016 Knockout phase matches</h1>
@@ -55,13 +65,36 @@ excerpt: EURO history
 </div>
 <script>
     var CONSTANTS = {
-        width: 1000,
+        width: 1300,
         height: 1000,
         margins: {
             top: 10, right: 10, bottom: 10, left: 10
         },
-        cellWidth: 40,
-        cellHeight: 4
+        cellWidth: 20,
+        cellHeight: 20,
+        headerHeight: 180,
+        headerWidth: 50,
+        colors: {
+            gridLine: '#ccc',
+            cells: [
+                {
+                    color: '#abd9e9',
+                    label: 'Preliminary round'
+                },
+                {
+                    color: '#2c7bb6',
+                    label: 'Final tournament'
+                },
+                {
+                    color: '#fdae61',
+                    label: 'The Runner-up'
+                },
+                {
+                    color: '#d7191c',
+                    label: 'The champion'
+                }
+            ]
+        }
     };
 
 
@@ -77,8 +110,13 @@ excerpt: EURO history
             .attr('width', CONSTANTS.height - CONSTANTS.margins.top - CONSTANTS.margins.bottom)
             .attr('transform', "translate(" + (CONSTANTS.margins.left) + "," + (CONSTANTS.margins.top) + ")");
 
+    var cellElement = g.append('g')
+            .classed('chart-cells', true);
     var yearsElement = g.append('g')
             .classed('chart-years', true);
+    var teamsElement = g.append('g')
+            .classed('chart-teams', true);
+
 
     var yearsScale, teamsScale;
 
@@ -92,7 +130,7 @@ excerpt: EURO history
 
             // Build the teams and the years array
             inserted = years.findIndex(function (e) {
-                return e.year == r.year;
+                return e.year == +r.year;
             });
             if (inserted < 0) {
                 years.push({year: +r.year});
@@ -101,7 +139,7 @@ excerpt: EURO history
                 return e.teamCode == r.teamCode;
             });
             if (inserted < 0) {
-                teams.push({team: r.team, teamCode: r.teamCode});
+                teams.push({team: r.team, teamCode: r.teamCode, firstYear: r.year});
             }
         });
 
@@ -113,19 +151,92 @@ excerpt: EURO history
             return a.team > b.team ? 1 : (a.team < b.team ? -1 : 0);
         });
 
-        console.log(years);
         yearsScale = cellScale(years.map(function (e) {
             return e.year;
-        }), 0, CONSTANTS.cellWidth);
+        }), CONSTANTS.headerHeight, CONSTANTS.cellHeight);
+
+        teamsScale = cellScale(teams.map(function (e) {
+            return e.team;
+        }), CONSTANTS.headerWidth, CONSTANTS.cellWidth);
 
         drawBoard(teams, years, json);
+
+        d3.select('#sort-alphabet')
+                .on('click', function () {
+                    teams.sort(function (a, b) {
+                        return a.team > b.team ? 1 : (a.team < b.team ? -1 : 0);
+                    });
+                    teamsScale = cellScale(teams.map(function (e) {
+                        return e.team;
+                    }), CONSTANTS.headerWidth, CONSTANTS.cellWidth);
+
+                    drawBoard(teams, years, json);
+                });
+
+        d3.select('#sort-first-year')
+                .on('click', function () {
+                    teams.sort(function (a, b) {
+                        return a.firstYear - b.firstYear;
+                    });
+                    teamsScale = cellScale(teams.map(function (e) {
+                        return e.team;
+                    }), CONSTANTS.headerWidth, CONSTANTS.cellWidth);
+
+                    drawBoard(teams, years, json);
+                });
     });
 
     function drawBoard(teams, years, data) {
-        drawYears(years);
+        drawCells(data);
+        drawYears(years, teams.length);
+        drawTeams(teams, years.length);
     }
 
-    function drawYears(years) {
+    function drawCells(data) {
+        var selection = cellElement.selectAll('.cell')
+                .data(data, function(d) {
+                    return d.teamCode + "-" + d.year;
+                });
+
+        var cellR = Math.round(CONSTANTS.cellWidth / 2 - 1);
+        selection.enter()
+                .append('circle')
+                .classed('cell', true)
+                .attr('width', CONSTANTS.cellWidth)
+                .attr('height', CONSTANTS.cellHeight)
+                .attr('cx', function (d) {
+                    return teamsScale(d.team) + cellR + 1;
+                })
+                .attr('cy', function (d) {
+                    return yearsScale(d.year) + cellR + 1
+                })
+                .attr('r', cellR)
+                .attr('fill', function (d) {
+                    if (d.roundIndex > 6) {
+                        return CONSTANTS.colors.cells[0].color;
+                    } else if (d.roundIndex == 0) {
+                        return CONSTANTS.colors.cells[3].color;
+                    } else if (d.roundIndex < 4) {
+                        return CONSTANTS.colors.cells[2].color;
+                    } else {
+                        return CONSTANTS.colors.cells[1].color;
+                    }
+                })
+                .append('title')
+                .text(function (d) {
+                    return d.round;
+                });
+
+        selection.transition()
+                .attr('cx', function (d) {
+                    return teamsScale(d.team) + cellR + 1;
+                })
+                .attr('cy', function (d) {
+                    return yearsScale(d.year) + cellR + 1
+                })
+    }
+
+    function drawYears(years, numTeams) {
         var selection = yearsElement.selectAll('.year')
                 .data(years, function (d) {
                     return d.year
@@ -135,36 +246,160 @@ excerpt: EURO history
                 .append('g')
                 .attr('class', 'year')
                 .attr('transform', function (d) {
-                    var x = yearsScale(d.year);
+                    var y = yearsScale(d.year);
+                    var x = 0;
+
+                    return "translate(" + x + "," + y + ")";
+                });
+
+        var dx = CONSTANTS.headerWidth - 5;
+        var dy = CONSTANTS.cellHeight / 2 + 4;
+        gs.append('text')
+                .text(function (d) {
+                    return d.year;
+                })
+                .attr('dx', dx)
+                .attr('dy', dy)
+                .attr('text-anchor', 'end');
+
+        var yearLines = yearsElement.selectAll('.year-line')
+                .data(years, function (d) {
+                    return d.year;
+                });
+
+        var lineWidth = CONSTANTS.headerWidth + numTeams * CONSTANTS.cellWidth;
+
+
+        yearLines.enter()
+                .append('line')
+                .classed('year-line', true)
+                .attr('y1', function (d) {
+                    return yearsScale(d.year);
+                })
+                .attr('y2', function (d) {
+                    return yearsScale(d.year);
+                })
+                .attr('x1', 0)
+                .attr('x2', lineWidth)
+                .attr('stroke', CONSTANTS.colors.gridLine)
+                .attr('stroke-width', '1');
+
+        var borders = yearsElement.selectAll('line.border')
+                .data([0, CONSTANTS.headerHeight + years.length * CONSTANTS.cellHeight]);
+
+        borders.enter()
+                .append('line')
+                .attr('y1', function (d) {
+                    return d;
+                })
+                .attr('y2', function (d) {
+                    return d;
+                })
+                .attr('x1', 0)
+                .attr('x2', lineWidth)
+                .attr('stroke', CONSTANTS.colors.gridLine)
+                .attr('stroke-width', '1');
+    }
+
+    function drawTeams(teams, numYears) {
+        var selection = teamsElement.selectAll('.team')
+                .data(teams, function (d) {
+                    return d.team
+                });
+
+        var gs = selection.enter()
+                .append('g')
+                .attr('class', 'team')
+                .attr('transform', function (d) {
+                    var x = teamsScale(d.team);
                     var y = 0;
 
                     return "translate(" + x + "," + y + ")";
                 });
 
+        var dx = CONSTANTS.headerWidth - 5;
+        var dy = CONSTANTS.cellHeight / 2 + 4;
         gs.append('text')
                 .text(function (d) {
-                    return d.year;
+                    return d.team;
                 })
-                .attr('transform', 'rotate(-90) translate(-40, ' + CONSTANTS.cellWidth / 2 + ')');
+                .attr('transform', 'rotate(-90) translate(' + (-CONSTANTS.headerHeight + 5) + ', ' + (CONSTANTS.cellWidth / 2 + 4) + ')');
+
+        gs.append('image')
+                .attr('xlink:href', function (d) {
+                    return "http://img.uefa.com/imgml/flags/18x18/" + d.teamCode + ".png"
+                })
+                .attr('width', 18)
+                .attr('height', 18)
+                .attr('y', 4);
+
+        selection.transition()
+                .attr('transform', function (d) {
+                    var x = teamsScale(d.team);
+                    var y = 0;
+
+                    return "translate(" + x + "," + y + ")";
+                });
 
 
+        var teamLines = teamsElement
+                .selectAll('.year-line')
+                .data(teams, function (d) {
+                    return d.team;
+                });
+
+        var lineHeight = CONSTANTS.headerHeight + numYears * CONSTANTS.cellHeight;
+        teamLines.enter()
+                .append('line')
+                .classed('team-line', true)
+                .attr('x1', function (d) {
+                    return teamsScale(d.team);
+                })
+                .attr('x2', function (d) {
+                    return teamsScale(d.team);
+                })
+                .attr('y1', 0)
+                .attr('y2', lineHeight)
+                .attr('stroke', CONSTANTS.colors.gridLine)
+                .attr('stroke-width', '1');
+
+        var borders = yearsElement.selectAll('line.border')
+                .data([0, CONSTANTS.headerWidth + teams.length * CONSTANTS.cellWidth]);
+
+        borders.enter()
+                .append('line')
+                .attr('x1', function (d) {
+                    return d;
+                })
+                .attr('x2', function (d) {
+                    return d;
+                })
+                .attr('y1', 0)
+                .attr('y2', lineHeight)
+                .attr('stroke', CONSTANTS.colors.gridLine)
+                .attr('stroke-width', '1');
     }
 
+    /**
+     * Custom scale
+     * @param domain
+     * @param base
+     * @param step
+     * @returns {s}
+     */
     function cellScale(domain, base, step) {
 
-        var _this = this;
+        function s(x) {
+            return this.base + this.scale(x) * this.step;
+        }
 
-        this.base = base;
-        this.step = step;
-        this.scale = d3.scale.ordinal()
+        s.base = base;
+        s.step = step;
+        s.scale = d3.scale.ordinal()
                 .domain(domain)
                 .range(d3.range(0, domain.length));
 
-        function s(x) {
-            return _this.base + _this.scale(x) * _this.step;
-        }
-
-        return s;
+        return s.bind(s);
     }
 </script>
 </body>

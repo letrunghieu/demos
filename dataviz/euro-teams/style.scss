@@ -4,8 +4,14 @@ body {
   font-family: 'Lato', sans-serif;
 }
 #artwork {
-  width: 1000px;
+  width: 1300px;
   margin: 1em auto;
+  line {
+    shape-rendering: crispEdges;
+  }
+}
+#sort-first-year {
+  margin-left: 2em;
 }
 #heading {
   text-align: center;
