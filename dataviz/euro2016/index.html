@@ -273,7 +273,7 @@ excerpt: This visualization demonstrates all possibles cases of matches of EURO 
             m.target.isCertain = teams[m.target.teamIndex] === 1;
             teamCurrentMatchNumber[m.target.teamIndex]++;
 
-        })
+        });
 
         return matches;
     }
@@ -385,5 +385,6 @@ excerpt: This visualization demonstrates all possibles cases of matches of EURO 
     drawChord();
     drawButtons();
 </script>
+{% include analytics.html %}
 </body>
 </html>
