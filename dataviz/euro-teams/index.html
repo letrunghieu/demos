@@ -29,8 +29,11 @@ excerpt: The history of national teams that attended UEFA European Championships
                 UEFA website
             </a>
         </p>
+        <p class="legend">
+            The name on the top of each column is the nation name. Hover the mouse over each circle to see the correct
+            team name and the best result of the team in that year.
+        </p>
         <p class="legend" id="color-legend">
-
         </p>
     </div>
 
@@ -162,7 +165,7 @@ excerpt: The history of national teams that attended UEFA European Championships
         }), CONSTANTS.headerHeight, CONSTANTS.cellHeight);
 
         teamsScale = cellScale(teams.map(function (e) {
-            return e.team;
+            return e.teamCode;
         }), CONSTANTS.headerWidth, CONSTANTS.cellWidth);
 
         drawBoard(teams, years, json);
@@ -173,7 +176,7 @@ excerpt: The history of national teams that attended UEFA European Championships
                         return a.team > b.team ? 1 : (a.team < b.team ? -1 : 0);
                     });
                     teamsScale = cellScale(teams.map(function (e) {
-                        return e.team;
+                        return e.teamCode;
                     }), CONSTANTS.headerWidth, CONSTANTS.cellWidth);
 
                     drawBoard(teams, years, json);
@@ -185,7 +188,7 @@ excerpt: The history of national teams that attended UEFA European Championships
                         return a.firstYear - b.firstYear;
                     });
                     teamsScale = cellScale(teams.map(function (e) {
-                        return e.team;
+                        return e.teamCode;
                     }), CONSTANTS.headerWidth, CONSTANTS.cellWidth);
 
                     drawBoard(teams, years, json);
@@ -211,7 +214,7 @@ excerpt: The history of national teams that attended UEFA European Championships
                 .attr('width', CONSTANTS.cellWidth)
                 .attr('height', CONSTANTS.cellHeight)
                 .attr('cx', function (d) {
-                    return teamsScale(d.team) + cellR + 1;
+                    return teamsScale(d.teamCode) + cellR + 1;
                 })
                 .attr('cy', function (d) {
                     return yearsScale(d.year) + cellR + 1
@@ -230,12 +233,12 @@ excerpt: The history of national teams that attended UEFA European Championships
                 })
                 .append('title')
                 .text(function (d) {
-                    return d.round;
+                    return d.team + ": " + d.round;
                 });
 
         selection.transition()
                 .attr('cx', function (d) {
-                    return teamsScale(d.team) + cellR + 1;
+                    return teamsScale(d.teamCode) + cellR + 1;
                 })
                 .attr('cy', function (d) {
                     return yearsScale(d.year) + cellR + 1
@@ -310,14 +313,14 @@ excerpt: The history of national teams that attended UEFA European Championships
     function drawTeams(teams, numYears) {
         var selection = teamsElement.selectAll('.team')
                 .data(teams, function (d) {
-                    return d.team
+                    return d.teamCode
                 });
 
         var gs = selection.enter()
                 .append('g')
                 .attr('class', 'team')
                 .attr('transform', function (d) {
-                    var x = teamsScale(d.team);
+                    var x = teamsScale(d.teamCode);
                     var y = 0;
 
                     return "translate(" + x + "," + y + ")";
@@ -341,7 +344,7 @@ excerpt: The history of national teams that attended UEFA European Championships
 
         selection.transition()
                 .attr('transform', function (d) {
-                    var x = teamsScale(d.team);
+                    var x = teamsScale(d.teamCode);
                     var y = 0;
 
                     return "translate(" + x + "," + y + ")";
@@ -359,10 +362,10 @@ excerpt: The history of national teams that attended UEFA European Championships
                 .append('line')
                 .classed('team-line', true)
                 .attr('x1', function (d) {
-                    return teamsScale(d.team);
+                    return teamsScale(d.teamCode);
                 })
                 .attr('x2', function (d) {
-                    return teamsScale(d.team);
+                    return teamsScale(d.teamCode);
                 })
                 .attr('y1', 0)
                 .attr('y2', lineHeight)
